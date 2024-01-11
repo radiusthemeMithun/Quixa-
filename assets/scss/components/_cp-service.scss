@@ -1,0 +1,180 @@
+.rt-service-wrap {
+    padding-top: 130px;
+    .section-heading {
+        &.style-2 {
+            width: 663px;
+        }
+    }
+    &.style-2 {
+        padding-bottom: 90px;
+        z-index: 1;
+        overflow: hidden;
+        position: relative;
+        .stroke-text {
+            position: absolute;
+            bottom: 40%;
+            right: -12%;
+            transform: rotate(-90deg);
+        }
+        .rt-blur-shape {
+            ul {
+                li {
+                    &:nth-child(1) {
+                        background-color: #F7EBD9;
+                        left: -12%;
+                        bottom: 0;
+                    }
+                    &:nth-child(2) {
+                        background-color: #DAD9F7;
+                        left: auto;
+                        right: -12%;
+                        bottom: 10%;
+                        top: auto;
+                    }
+                }
+            }
+        }
+    }
+    &.style-3 {
+        .section-heading {
+            @include media-only ("lg", min) {
+                width: 655px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+.rt-service-box {
+    &:hover {
+        .info-box {
+            .item-icon {
+                img {
+                    transform: scale(1.1);
+                }
+                .half-circle-shape {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    &.style-2 {
+        &:hover {
+            .info-box {
+                border-color: #E5E8F4;
+            }
+        }
+        .info-box {
+            border-color: transparent;
+            transition: all .3s ease-in-out;
+            .item-icon {
+                z-index: 1;
+                margin-bottom: 5px;
+                .service-dot-shape {
+                    bottom: 40px;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    z-index: -1;
+                }
+            }
+            p {
+                color: $color-body-light;
+            }
+        }
+        &.active {
+            .info-box {
+                border-color: #E5E8F4;
+            }
+        }
+    }
+}
+
+
+
+.rt-service-box-2 {
+    margin-bottom: 70px;
+    .info-box {
+        background-color: rgba(0, 0, 0, .05);
+        padding: 20px 40px 0;
+        border: 1px solid rgba(0, 0, 0, .05);
+        transition: all .3s ease-in-out;
+        border-radius: 26px;
+        &:hover {
+            border-color: #dadada;
+            background-color: $color-white;
+            .item-icon {
+                img {
+                    transform: scale(1.08);
+                }
+            }
+        }
+        .item-icon {
+            height: 100px;
+            width: 100px;
+            background-color: $color-primary;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 22px;
+            img {
+                transition: all .3s ease-in-out;
+            }
+            &.style-2 {
+                background-color: #FF6391;
+            }
+            &.style-3 {
+                background-color: #1399FA;
+            }
+            &.style-4 {
+                background-color: #A259D9;
+            }
+            &.style-5 {
+                background-color: #17C37B;
+            }
+        }
+        .title {
+            margin-left: 40px;
+        }
+        p {
+            text-transform: capitalize;
+        }
+        .quixa-button {
+            text-align: center;
+            margin-bottom: -30px;
+            .quixa-btn {
+                background-color: $color-white;
+                border-radius: 100px;
+                border: 2px solid #CFCFCF;
+                text-transform: uppercase;
+                font-weight: $font-extra-bold;
+
+                span {
+                    svg {
+                        color: $color-black;
+                    }
+                }
+                &:hover {
+                    background-color: $color-secondary;
+                    border-color: $color-black;
+                    box-shadow: 4px 7px 0px 0px rgba(0, 0, 0, 0.20);
+                    span {
+                        svg {
+                            color: $color-black;
+                        }
+                    } 
+                }
+                .btn-wrap {
+                    .btn-text1 {
+                        color: $color-black;
+                    }
+                    .btn-text2 {
+                        color: $color-black;
+                    }
+                }
+            }
+        }
+    }
+}

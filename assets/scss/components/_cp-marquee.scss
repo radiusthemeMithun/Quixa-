@@ -1,0 +1,90 @@
+.marquee-wrap {
+    z-index: 1;
+    margin-bottom: 20px;
+    .shape-list {
+        li {
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                transform: rotate(1.83deg);
+            }
+            &:nth-child(2) {
+                bottom: 0;
+                left: 0;
+                transform: rotate(-2.46deg);
+            }
+            &:nth-child(3) {
+                bottom: 0;
+                right: 0;
+                transform: rotate(2.041deg);
+            }
+            &:nth-child(4) {
+                top: 0;
+                right: 0;
+                transform: rotate(-1.42deg);
+            }
+        }
+    }
+    &.style-2 {
+        padding-top: 140px;
+    }
+}
+
+.rt-marquee-slider {
+    background-color: #0E0E0E;
+    padding: 35px 35px 20px;
+    .rt-marquee {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        &:hover {
+            .rt-marquee-item {
+                animation-play-state: paused;
+            }
+        }
+        .rt-marquee-item {
+            display: inline-block;
+            will-change: transform;
+            animation: marquee_left 30s linear infinite;
+            .entry-title {
+                color: $color-white;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: $font-extra-bold;
+                line-height: 16px;
+                display: inline-block;
+                margin-left: 30px;
+                img {
+                    margin-left: 20px;
+                    position: relative;
+                    top: -5px;
+                }
+            }
+        }
+    }
+    &.style-2 {
+        background-color: transparent;
+        padding: 0;
+        .rt-marquee {
+            .rt-marquee-item {
+                .entry-title {
+                    font-size: 100px;
+                    font-weight: $font-extra-bold;
+                    line-height: 100px;
+                    background: linear-gradient(91deg, #040328 5.09%, #3D2A97 50.45%, #040328 97.73%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-transform: capitalize;
+                    margin-bottom: 0;
+                    img {
+                        margin-left: 20px;
+                        position: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

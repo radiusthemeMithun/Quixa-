@@ -1,0 +1,130 @@
+/*------------------- toBottomFrom Animation -------------------*/
+@keyframes toBottomFromTop {
+    49% {
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    51% {
+      opacity: 1;
+    }
+}
+
+/*------------------- toRightFrom Animation -------------------*/
+
+// @keyframes toRightFromLeft {
+// 	49% {
+// 	  	transform: translateX(100%);
+// 	}
+// 	50% {
+// 	  	opacity: 0;
+// 	  	transform: translateX(-100%);
+// 	}
+// 	51% {
+// 	  	opacity: 1;
+// 	}
+// }
+
+/*------------------- Draw Animation -------------------*/
+
+@keyframes Rtdraw {
+  0% {
+      stroke-dashoffset: 0;
+  }
+  100% {
+      stroke-dashoffset: 770;
+  }
+}
+
+
+
+/*------------------- Scale-Up Animation -------------------*/
+
+@keyframes scale-up-one {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/*------------------- Move Animation -------------------*/
+@keyframes move1 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(30px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+}
+  100% {
+  transform: translateY(0) translateX(0);
+  }
+}
+
+/*------------------- dash Animation -------------------*/
+
+@keyframes dash-animation {
+	0% {
+		stroke-dashoffset: 0;
+	}
+	100% {
+		stroke-dashoffset: 100%;
+	}
+}
+
+
+
+/*------------------- Circle Animation -------------------*/
+
+@keyframes rt-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------- Circle Animation -------------------*/
+
+@keyframes rt-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*------------------- Marquee Animation -------------------*/
+@keyframes marquee_left {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}

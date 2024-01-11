@@ -1,0 +1,209 @@
+/**
+ * Layout - Footer.
+ */
+
+.footer-1 {
+    z-index: 1;
+    background-color: #00081B;
+    &.style-2 {
+        background-color: #02081B;
+    }
+    .footer-top {
+        padding: 50px 0;
+        z-index: 1;
+        position: relative;
+        @include media-only ("sm", min) {
+            padding: 100px 0;
+        }
+        @include media-only ("lg", min) {
+            padding: 120px 0 120px;
+        }
+    }
+}
+.rt-footer-shape {
+    top: 50px;
+    left: 50px;
+}
+
+.rt-blur-shape {
+    display: none;
+    @include media-only ("lg", min) {
+        display: block;
+    }
+    ul {
+        li {
+            width: 431px;
+            height: 431px;
+            border-radius: 431px;
+            background: #231435;
+            filter: blur(100px);
+            position: absolute;
+            z-index: -1;
+            &:nth-child(1) {
+                bottom: -36%;
+                left: 0;
+            }
+            &:nth-child(2) {
+                top: -40%;
+                left: 17%;
+                background-color: #141C35;
+            }
+            &:nth-child(3) {
+                top: -35%;
+                right: -10%;
+                background-color: #141C35;
+            }
+            &:nth-child(4) {
+                bottom: -35%;
+                right: 5%;
+                background-color: #130B31;
+            }
+        }
+    }
+}
+
+
+.footer-link {
+    ul {
+        li {
+            position: relative;
+            &:last-child {
+                .link {
+                    margin-bottom: 0;
+                }
+            }
+            .link {
+                position: relative;
+                transition: all .4s ease;
+                margin-bottom: 10px;
+                color: $color-gray-font;
+                font-weight: $font-medium;
+                &:hover {
+                    &::after {
+                        width: 100%;
+                        left: 0;
+                        opacity: 1;
+                    }
+                }
+                &::after {
+                    content: "";
+                    height: 1px;
+                    width: 0;
+                    background-color: $color-white;
+                    position: absolute;
+                    bottom: 1px;
+                    right: 0;
+                    opacity: 0;
+                    transition: .5s;
+                }
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.footer-contact {
+    .rt-contact {
+        color: $color-gray-font;
+        font-weight: $font-medium;
+        line-height: 30px;
+        &.address {
+            margin-bottom: 15px;
+        }
+        &.phone {
+            font-size: 20px;
+            font-weight: $font-bold;
+            line-height: 26px;
+            margin-bottom: 10px;
+            a {
+                color: #F7F6F6;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-gray-font;
+                }
+            }
+        }
+        &.mail {
+            a {
+                color: $color-gray-font;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.footer-newsletter {
+    .logo {
+        margin-bottom: 35px;
+    }
+    p {
+        font-weight: $font-medium;
+        color: $color-gray-font;
+        margin-bottom: 12px;
+    }
+    .text {
+        color: $color-gray-font;
+        font-weight: $font-medium;
+        a {
+            color: $color-gray-font;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+
+
+.footer-bottom {
+    border-top: 1px solid #232323;
+    background-color: #00081B;
+    @include media-only ("sm", min) {
+        padding: 15px 0;
+    }
+}
+
+.footer-bottom-text {
+    color: $color-gray-font;
+    font-weight: $font-medium;
+    a {
+        color: $color-gray-font;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
+
+.footer-btm-cta-wrap {
+    border-top: 0;
+    .rt-footer-shape-2 {
+        top: -7px;
+        right: 14%;
+    }
+    .rt-footer-shape-3 {
+        bottom: -33px;
+        right: 13.5%;
+    }
+}
+
+
+
+.footer-widget-title {
+    font-weight: $font-bold;
+    font-size: 20px;
+    color: $color-white;
+    margin-bottom: 15px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+
+
+

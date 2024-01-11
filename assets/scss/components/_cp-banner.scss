@@ -1,0 +1,69 @@
+.rt-banner-wrap {
+    background-color: #02081B;
+    z-index: 2;
+    padding: 80px 0;
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url(../../media/banner/banner-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-color: #02081B;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.rt-banner-content {
+    z-index: 3;
+    .element-img {
+        margin: 0 30px;
+        transform: rotate(1.36deg);
+        &.style-2 {
+            transform: rotate(-3.74deg);
+        }
+    }
+    .text {
+        color: $color-white;
+        font-size: 60px;
+        font-weight: $font-black;
+        text-transform: uppercase;
+        vertical-align: bottom;
+    }
+}
+
+.rt-banner-wrap-2 {
+    padding-top: 130px;
+}
+
+.rt-banner-layout {
+    background-color: #40F5DF;
+    border-radius: $border-radius-xl;
+    padding: 75px 100px;
+    .content {
+        .title {
+            font-size: 48px;
+            font-weight: $font-bold;
+            line-height: 55px;
+            margin-bottom: 20px;
+        }
+    }
+    .item-img {
+        position: absolute;
+        bottom: 0;
+        right: 160px;
+    }
+}

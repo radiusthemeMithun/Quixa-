@@ -1,0 +1,106 @@
+/**
+ * Components: Contact.
+ */
+
+.rt-contact-wrap {
+    background-color: #F8F9FC;
+    z-index: 1;
+    .section-heading {
+        .heading-title {
+            font-weight: $font-semibold;
+            .bold-text {
+                .section-shape {
+                    bottom: -5px;
+                }
+            }
+        }
+    }
+    .rt-blur-shape {
+        ul {
+            li {
+                &:nth-child(1) {
+                    bottom: -40%;
+                    left: 0;
+                    background-color: #F8E8FD;
+                }
+                &:nth-child(2) {
+                    top: -10%;
+                    left: auto;
+                    right: -12%;
+                    background-color: #EAE8FF;
+                }
+            }
+        }
+    }
+}
+
+
+.contact-form-style-1 {
+    .form-group {
+        margin-bottom: 24px;
+        position: relative;
+        .rt-form-control {
+			background-color: transparent;
+            border-radius: 0;
+            border: 0;
+            border-bottom: 1px solid #D4D7E2;
+            color: $color-black;
+            font-weight: $font-medium;
+            padding: 0 0 11px;
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+                border-color: $color-black;
+            }
+            &::placeholder {
+                color: $color-paragraph;
+            }
+        }
+        .rt-textarea {
+            min-height: 90px;
+            resize: none;
+            padding-top: 20px;
+        }
+    }
+  
+    .submit-btn {
+        border-radius: $border-radius-sm;
+		color: $color-white;
+		background-color: $color-primary;
+		text-align: center;
+		display: inline-block;
+		padding: 13px 40px;
+		transition: all .3s ease-in-out;
+		font-weight: $font-semibold;
+        font-size: 20px;
+        border: 0;
+        &:hover {
+            color: $color-white;
+            background-color: $color-blue-500;
+        }
+		&:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}
+
+
+
+
+
+  
+/*rt-contact-form*/
+  
+.rt-contact-form {
+    .form-response {
+        .alert {
+            margin-top: 1rem;
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+

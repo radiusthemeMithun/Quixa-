@@ -1,0 +1,254 @@
+
+.quixa-button {
+	.quixa-btn {
+		background-color: $color-primary;
+		font-size: 16px;
+		padding: 13px 30px 12px;
+		font-weight: $font-semibold;
+		line-height: normal;
+		text-transform: capitalize;
+		text-align: center;
+		display: inline-block;
+		transition: all .4s ease;
+		position: relative;
+		overflow: hidden;
+		z-index: 0;
+		border: 0;
+        border-radius: $border-radius-sm;
+		&.style-2 {
+			background-color: $color-secondary;
+			border-radius: 100px;
+			border: 2px solid $color-black;
+			text-transform: uppercase;
+			font-weight: $font-extra-bold;
+			box-shadow: 4px 7px 0px 0px rgba(0, 0, 0, 0.20);
+			padding: 18px 30px;
+			span {
+				svg {
+					color: $color-black;
+				}
+			}
+			&:hover {
+				background-color: $color-secondary;
+				border-color: $color-black;
+				box-shadow: 4px 7px 0px 0px rgba(0, 0, 0, 0.20);
+				span {
+					svg {
+						color: $color-black;
+					}
+				} 
+			}
+			.btn-wrap {
+				.btn-text1 {
+					color: $color-black;
+				}
+				.btn-text2 {
+					color: $color-black;
+				}
+			}
+		}
+		&.style-3 {
+			background-color: $color-white;
+			border-radius: 100px;
+			.btn-wrap {
+				.btn-text1 {
+					color: $color-black;
+					svg {
+						color: $color-black;
+					}
+				}
+				.btn-text2 {
+					color: $color-black;
+					svg {
+						color: $color-black;
+					}
+				}
+			}
+		}
+		&.style-4 {
+			border-radius: 100px;
+			border: 1px solid $color-blue-600;
+			background: linear-gradient(180deg, $color-blue-400 -8.33%, $color-blue-700 100%);
+			box-shadow: 0px 22px 30px 0px rgba(0, 55, 186, 0.17);
+			padding: 13px 24px;
+			span {
+				svg {
+					color: $color-white;
+				}
+			}
+			.btn-wrap {
+				.btn-text1 {
+					color: $color-white;
+				}
+				.btn-text2 {
+					color: $color-white;
+				}
+			}
+		}
+		span {
+			svg {
+				color: $color-white;
+				margin-left: 10px;
+				transition: all .4s ease;
+				position: relative;
+				top: -2px;
+			}
+		}
+		&:hover {
+			.btn-wrap {
+				.btn-text1 {
+					transform: translateY(-150%);
+				}
+				.btn-text2 {
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+		.btn-wrap {
+			display: inline-block;
+			overflow: hidden;
+			position: relative;
+			z-index: 1;
+			float: left;
+			.btn-text1 {
+				color: $color-white;
+				display: block;
+				position: relative;
+				transition: all .4s ease-in-out;
+			}
+			.btn-text2 {
+				position: absolute;
+				top: 100%;
+				display: block;
+				color: $color-white;
+				transition: all .4s ease-in-out;
+			}
+		}
+	}
+}
+
+
+.arrow-button {
+    .arrow-btn {
+        border-radius: 13px;
+        border: 1px solid #BDBDBD;
+        background-color: $color-white;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+        height: 66px;
+        width: 66px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        svg {
+            color: $color-black;
+        }
+        &:hover {
+            svg {
+				animation: headShake 1s ease;
+			}
+        }
+    }
+}
+
+.item-button {
+	.item-btn {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: $font-bold;
+		color: $color-white;
+		padding: 13px 24px;
+		border: none;
+		border-radius: 100px;
+		transition: all 0.3s ease-in-out;
+		z-index: 1;
+		padding-left: 22px;
+		&:hover {
+			padding-right: 50px;
+			span {
+				visibility: visible;
+    			opacity: 1;
+			}
+			&::after {
+				width: 100%;
+    			border-radius: 100px;
+				border: 1px solid $color-blue-600;
+				background: linear-gradient(180deg, $color-blue-400 -8.33%, $color-blue-700 100%);
+				box-shadow: 0px 22px 30px 0px rgba(0, 55, 186, 0.17);
+			}
+			svg {
+				left: calc(100% - 30px);
+			}
+		}
+		&::after {
+			content: "";
+			width: 50%;
+			height: 100%;
+			border-radius: 100px;
+			border: 1px solid $color-blue-600;
+			background: linear-gradient(180deg, $color-blue-400 -8.33%, $color-blue-700 100%);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%) translateX(-50%);
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+		}
+		span {
+			color: #fff;
+			font-weight: $font-bold;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.3s ease-in-out;
+		}
+		svg {
+			color: $color-white;
+			visibility: visible;
+			opacity: 1;
+			position: absolute;
+			// left: 20px;
+			transition: .5s;
+			left: 50%;
+			top: 50%;
+			transform: translateY(-50%) translateX(-50%);
+		}
+	}
+}
+
+.button-navigation {
+    display: none;
+    @include media-only ("sm", min) {
+        display: block;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        top: 50%;
+        transition: all 0.3s ease-out;
+        height: 60px;
+        width: 60px;
+        border-radius: 60px;
+        border: 2px solid $color-gray-font;
+        &:hover {
+            svg {
+                animation: headShake 1.5s;
+            }
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .swiper-button-prev {
+        left: -40px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .swiper-button-next {
+        right: -40px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+

@@ -1,0 +1,56 @@
+.rt-brand-wrap {
+    padding-top: 95px;
+    .rt-blur-shape {
+        ul {
+            li {
+                height: 484px;
+                width: 484px;
+                border-radius: 484px;
+                filter: blur(100px);
+                background-color: transparent;
+                &:nth-child(1) {
+                    background-color: #E8FAF7;
+                    top: -10%;
+                    left: -15%;
+                }
+                &:nth-child(2) {
+                    background-color: #FAF8E8;
+                    top: -10%;
+                    right: -15%;
+                    left: auto;
+                }
+            }
+        }
+    }
+}
+.upper-text {
+    color: $color-gray-font;
+    font-size: 18px;
+    font-weight: $font-medium;
+    line-height: 16px;
+    margin-bottom: 45px;
+    span {
+        color: $color-black;
+        font-weight: $font-bold;
+    }
+}
+
+.rt-brand-box {
+    cursor: pointer;
+    &:hover {
+        .rt-brand-img {
+            img {
+                filter: grayscale(0);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.rt-brand-img {
+    img {
+        transition: all .4s ease-in-out;
+        filter: grayscale(100%);
+        opacity: 50%;
+    }
+}

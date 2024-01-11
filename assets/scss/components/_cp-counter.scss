@@ -1,0 +1,134 @@
+
+
+/*------------------- countdown -------------------*/
+
+.rt-counter-wrap {
+    padding-top: 120px;
+}
+
+.counterUp {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 130px;
+    font-weight: $font-black;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-text-stroke: 2px #565656;
+    color: transparent;
+    transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+    &:before {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        color: $color-primary;
+        white-space: nowrap;
+        content: attr(data-hover);
+        transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+    }
+}
+
+.post-fix {
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    font-size: 130px;
+    font-weight: $font-black;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-text-stroke: 2px #565656;
+    color: transparent;
+    transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+    &:before {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        color: $color-primary;
+        white-space: nowrap;
+        content: attr(data-hover);
+        transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
+    }
+}
+
+.rt-counter-layout {
+   gap: 50px;
+}
+
+.rt-counter-box {
+    position: relative;
+    flex: 1;
+    z-index: 1;
+    &:hover {
+        &::before {
+            visibility: hidden;
+            opacity: 0;
+        }
+        &::after {
+            visibility: visible;
+            opacity: 1;
+            width: 100%; 
+            left: 0%;
+        }
+        .counterUp {
+            -webkit-text-stroke: 2px $color-primary;
+            color: transparent;
+            &::before {
+                width: 100%;
+            }
+        }
+        .post-fix {
+            -webkit-text-stroke: 2px $color-primary;
+            color: transparent;
+            &::before {
+                width: 100%;
+            }
+        }
+        .label {
+            color: $color-primary;
+        }
+    }
+    .counterUp {
+        position: relative;
+    }
+    .bg-shape {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        z-index: -1;
+        svg {
+            color: #FDE3E3;
+        }
+        &.style-2 {
+            svg {
+                color: #E3FDE9;
+            }
+        }
+        &.style-3 {
+            svg {
+                color: #E4E3FD;
+            }
+        }
+        &.style-4 {
+            svg {
+                color: #F8FDE3; 
+            }
+        }
+    }
+    .label {
+        color: $color-black;
+        font-size: 20px;
+        font-weight: $font-bold;
+        text-transform: capitalize;
+        transition: all .4s ease-in-out;
+        text-align: center;
+        @include media-only ("lg", min) {
+            margin-top: -34px;
+        }
+    }
+}

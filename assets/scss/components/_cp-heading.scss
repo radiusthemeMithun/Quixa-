@@ -1,0 +1,87 @@
+.section-heading {
+	margin-bottom: 40px;
+    .subtitle {
+        color: $color-gray-font;
+        font-size: 16px;
+        font-weight: $font-semibold;
+        line-height: normal;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 12px;
+    }
+    .rt-subtitle {
+        color: $color-black;
+        font-size: 16px;
+        font-weight: $font-semibold;
+        line-height: normal;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+        background-color: #7DE8FF;
+        display: inline-block;
+        padding: 4px 20px;
+    }
+  	.heading-title {
+		font-family: $font-title;
+		color: $color-black;
+        font-size: 48px;
+        font-weight: $font-bold;
+        line-height: 52px;
+        margin-bottom: 10px;
+  	}
+    &.style-2 {
+        @include media-only ("lg", min) {
+            width: 517px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    &.style-3 {
+        .heading-title {
+            background: linear-gradient(90deg, #040328 7.83%, #31017F 46.69%, #040328 92.6%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: $font-extra-bold;
+        }
+    }
+}
+
+.bold-text {
+    position: relative;
+    font-weight: $font-bold;
+}
+
+
+.section-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+.section-shape.has-animation {
+    width: 0;
+}
+
+.section-shape.active-animation {
+    stroke-dasharray: 770;
+    animation: Rtdraw 1s reverse;
+    width: 100%;
+}
+
+.stroke-text {
+    .rt-stroke {
+        font-size: 150px;
+        font-weight: $font-bold;
+        line-height: 52px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px var(--color-white);
+        color: transparent;
+    }
+}

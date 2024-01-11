@@ -1,0 +1,125 @@
+
+.rt-pricing-wrap {
+    z-index: 1;
+}
+
+.bg-box-shape {
+    position: absolute;
+    top: 150px;
+    z-index: -2;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+.rt-blr-shape {
+    height: 536px;
+    width: 536px;
+    border-radius: 536px;
+    background-color: #EDFBF3;
+    filter: blur(150px);
+    position: absolute;
+    z-index: -1;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.rt-pricing-box {
+    border-radius: $border-radius-xl;
+    border: 1px solid #E5E8F4;
+    background-color: $color-white;
+    padding: 45px 50px 50px;
+    .title {
+        font-size: 20px;
+        font-weight: $font-medium;
+        margin-bottom: 18px;
+    }
+
+    .quixa-button {
+        .quixa-btn {
+            background-color: transparent;
+            border: 1px solid $color-primary;
+            span {
+                svg {
+                    color: $color-primary;
+                }
+            }
+            &:hover {
+                background-color: $color-primary;
+                span {
+                    svg {
+                        color: $color-white;
+                    }
+                } 
+            }
+            .btn-wrap {
+                .btn-text1 {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+    &.style-2 {
+        .title {
+            margin-bottom: 8px;
+        }
+        .text {
+            color: $color-body-light;
+            font-weight: $font-medium;
+            margin-bottom: 0;
+            font-size: 17px;
+            padding-bottom: 20px;
+        }
+        .rt-price {
+            position: relative;
+            &::after {
+                content: "";
+                height: 1px;
+                width: 100%;
+                background-color: #EBEBEB;
+                position: absolute;
+                bottom: -7px;
+                left: 0;
+                right: 0;
+            }
+            .item-currency {
+                background: linear-gradient(90deg, #040328 7.83%, #31017F 46.69%, #040328 92.6%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .quixa-button {
+            .quixa-btn {
+                padding: 18px 60px;
+                span {
+                    svg {
+                        color: $color-white;
+                    }
+                }
+                .btn-wrap {
+                    .btn-text1 {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.rt-price {
+    margin-bottom: 40px;
+    .item-currency {
+        color: $color-black;
+        font-size: 36px;
+        font-weight: $font-extra-bold;
+        .duration {
+            color: $color-gray-font;
+            font-size: 14px;
+            font-weight: $font-medium;
+            margin-left: 10px;
+        }
+    }
+}
+
+

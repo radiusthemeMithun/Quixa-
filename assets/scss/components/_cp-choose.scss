@@ -1,0 +1,93 @@
+
+.rt-choose-wrap {
+    padding-top: 140px;
+}
+
+.rt-choose-box {
+    position: relative;
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url(../../media/other/pricing-1.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        // background-size: cover;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.rt-choose-img {
+    position: relative;
+    img {
+        border-radius: 30px;
+        box-shadow: 0px 0px 60px 0px #CC9881;
+    }
+}
+
+.rt-choose-element {
+    li {
+        position: absolute;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .text {
+            font-size: 42.27px;
+            font-weight: $font-black;
+            line-height: 21.135px;
+            color: $color-white;
+            margin-bottom: 10px;
+            &.style-2 {
+                font-size: 16px;
+                font-weight: $font-medium;
+            }
+        }
+        &:nth-child(1) {
+            border-radius: 15px;
+            background-color: #D049FF;
+            box-shadow: -7.714px 7.714px 0px 0px #AF26DF;
+            width: 120px;
+            height: 120px;
+            bottom: -30px;
+            right: 75px;
+        }
+        &:nth-child(2) {
+            border-radius: 9.863px;
+            background-color: #FFBC0F;
+            box-shadow: -8px 7px 0px 0px #EFAE04;
+            height: 77;
+            width: 160px;
+            padding: 15px 30px 10px;
+            bottom: 100px;
+            left: 30px;
+            .text-2 {
+                color: $color-white;
+                font-size: 20px;
+                font-weight: $font-medium;
+                line-height: 1;
+            }
+            .text-3 {
+                color: $color-white;
+                font-size: 22px;
+                font-weight: $font-bold;
+            }
+        }
+        &:nth-child(3) {
+            height: auto;
+            width: auto;
+            border-radius: 8.63px;
+            background: #A9F927;
+            box-shadow: -8px 8px 0px 0px #84D500;
+            color: $color-black;
+            font-size: 25px;
+            font-weight: $font-medium;
+            padding: 10px 24px;
+            top: 45px;
+            right: 30px;
+        }
+    }
+}

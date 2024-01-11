@@ -1,0 +1,25 @@
+
+.error-box {
+    .item-img {
+        margin-bottom: 35px;
+    }
+    .content {
+        @include media-only ("lg", min) {
+            width: 481px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.2;
+            @include media-only ("xs", min) {
+                font-size: 36px;
+                line-height: 1.5;
+            }
+        }
+        p {
+            margin-bottom: 25px;
+        }
+    }
+}

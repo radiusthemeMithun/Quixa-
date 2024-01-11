@@ -1,0 +1,65 @@
+/**
+ * Components: Input.
+ */
+
+.input-group {
+    width: 100%;
+    position: relative;
+    display: block;
+    @include media-only (321px, min) {
+        display: flex;
+    }
+    .form-control {
+        border-radius: 100px !important;
+        border: 1px solid #414141;
+        background-color: transparent;
+        height: 60px;
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+        color: $color-white;
+        padding: 0 0 0 20px;
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+            border-color: $color-white;
+        }
+        &::placeholder {
+            color: $color-gray-font;
+        }
+    }
+    .btn-outline-secondary {
+        border: 0;
+        color: $color-primary;
+        background-color: $color-primary;
+        border-radius: 50px !important;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        transition: all .4s ease-in-out;
+        z-index: 4;
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        svg {
+            color: $color-white;
+            transition: all .4s ease-in-out;
+        }
+        
+        &:hover {
+            background-color: $color-white;
+            color: $color-black;
+            svg {
+                animation: headShake 1.5s;
+                color: $color-primary;
+            }
+        }
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+    }
+}

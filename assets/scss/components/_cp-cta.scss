@@ -1,0 +1,27 @@
+.rt-cta-layout {
+    border-top: 1px solid #1D212F;
+    padding: 70px 0;
+    &.style-2 {
+        border-top: 0;
+        border-bottom: 1px solid #1D212F;
+    }
+}
+
+.rt-cta-box {
+    gap: 20px;
+    .quixa-button {
+        .quixa-btn {
+            border: 0;
+        }
+    }
+}
+
+.cta-title {
+    background: linear-gradient(90deg, #FFF -2.1%, #8B7AF5 53.56%, #FFF 83.46%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: $font-black;
+    line-height: 48px;
+}
