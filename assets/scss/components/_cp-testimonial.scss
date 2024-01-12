@@ -56,6 +56,24 @@
     }
 }
 
+.rt-testimonial-wrap-4 {
+    background-color: #1B1B1B;
+    .rt-shape {
+        li {
+            position: absolute;
+            &:nth-child(1) {
+                bottom: -110px;
+                left: auto;
+            }
+            &:nth-child(2) {
+                top: -45px;
+                right: 15%;
+                transform: rotate(-165deg);
+            }
+        }
+    }
+}
+
 .rt-testimonial-layout-2 {
     border-radius: 50px;
     background-image: url(../../media/testimonial/testimonial-bg.png);
@@ -145,7 +163,7 @@
                         color: $color-black;
                     }
                     .designation {
-                        color: $color-body-light;
+                        color: $color-gray-font;
                     }
                 }
             }
@@ -162,6 +180,54 @@
             font-weight: $font-medium;
             margin-bottom: 5px;
             line-height: 28px;
+        }
+    }
+    &.style-4 {
+        z-index: 1;
+        .bg-shape {
+            z-index: -1;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+        .author-image {
+            img {
+                border-radius: 50%;
+            }
+        }
+        .rt-quote {
+            font-size: 24px;
+            font-weight: $font-medium;
+            color: $color-white;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
+        .rt-author-area-2 {
+            position: relative;
+            padding-top: 20px;
+                &::before {
+                    content: "";
+                    height: 5px;
+                    width: 50px;
+                    background-color: $color-white;
+                    border-radius: 50px;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                }
+            .name {
+                font-size: 24px;
+                color: $color-primary;
+                font-weight: $font-semibold;
+            }
+            .designation {
+                color: #8F8F8F;
+                font-weight: $font-medium;
+                line-height: normal;
+                text-transform: capitalize;
+            }
         }
     }
 }

@@ -360,7 +360,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $color-body-light;
+    border: 1px solid $color-gray-font;
     transition: all .3s ease-in-out;
     &:hover {
         background-color: $color-blue-400;
@@ -370,7 +370,7 @@
         }
     }
     svg {
-        color: $color-body-light;
+        color: $color-gray-font;
         transition: all .3s ease-in-out;
     }
 }

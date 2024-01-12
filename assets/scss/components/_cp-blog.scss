@@ -78,6 +78,35 @@
             }
         }
     }
+    &.style-3 {
+        .item-content {
+            padding-top: 28px;
+            .entry-meta-list {
+                li {
+                    a {
+                        svg {
+                            color: $color-gray-font;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.blog-imagelayout {
+    .rt-tag {
+        bottom: -15px;
+        left: 15px;
+        z-index: 1;
+        .tag {
+            border: 1px solid #E7E7E7;
+            background-color: $color-white;
+            color: $color-black;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }       
 }
 
 .rt-date {

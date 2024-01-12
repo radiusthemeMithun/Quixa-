@@ -23,15 +23,16 @@
 
    
     --color-gray: #F5F5F5;
-    --color-gray-font: #7F838C;
     --color-gray-body: #f9f9f9;
+    --color-gray-69: #696969;
+    --color-gray-42: #424242;
+
 	
 	--color-white: #fff;
 	--color-black: #000;
 	--color-body: #343C4D;
-    --color-body-light: #7F838C;
+    --color-gray-font: #7F838C;
     --color-paragraph: #343C4D;
-	
 	
 	--font-body: "Urbanist", sans-serif;
 	--font-title: "Urbanist", sans-serif;
@@ -42,6 +43,10 @@
 	--border-radius-md: 8px;
 	--border-radius-lg: 16px;
 	--border-radius-xl: 20px;
+}
+
+.color-scheme-2 {
+    --color-primary: #FF9B4B;
 }
 
 

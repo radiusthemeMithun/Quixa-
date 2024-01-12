@@ -63,7 +63,7 @@
             margin-bottom: 8px;
         }
         .text {
-            color: $color-body-light;
+            color: $color-gray-font;
             font-weight: $font-medium;
             margin-bottom: 0;
             font-size: 17px;
@@ -102,6 +102,13 @@
                     }
                 }
             }
+        }
+    }
+    &.style-4 {
+        padding: 50px 80px 60px;
+        .shape {
+            top: 0;
+            right: 0;
         }
     }
 }

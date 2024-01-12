@@ -8,16 +8,72 @@
     &.style-2 {
         background-color: #02081B;
     }
-    .footer-top {
-        padding: 50px 0;
-        z-index: 1;
-        position: relative;
-        @include media-only ("sm", min) {
-            padding: 100px 0;
+    &.style-3 {
+        .rt-blur-shape {
+           
+            ul {
+                li {
+                    z-index: 1;
+                    &:nth-child(1) {
+                        background-color: rgba(27, 34, 54, .5);
+                    }
+                   
+                    &:nth-child(2) {
+                        top: -55%;
+                        background-color: rgba(54, 38, 22, .5);
+                    }
+                    &:nth-child(3) {
+                
+                        background-color: rgba(30, 42, 75, .5);
+                        right: -10%;
+                    }
+                    &:nth-child(4) {
+                       
+                        background-color: rgba(52, 61, 87, .5);
+                        right: -10%;
+                       
+                    }
+                }
+            }
         }
-        @include media-only ("lg", min) {
-            padding: 120px 0 120px;
+        .footer-top {
+            .desc {
+                color: $color-gray-font;
+            }
         }
+        .footer-bottom {
+            border-top: 0;
+            background-color: #00081B;
+            .footer-bottom-layout {
+                border-top: 1px solid #373C47;
+                padding: 33px 0 20px;
+                .shape {
+                    li {
+                        position: absolute;
+                        &:nth-child(1) {
+                            top: -23px;
+                            right: 0;
+                        }
+                        &:nth-child(2) {
+                            top: -23px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-top {
+    padding: 50px 0;
+    z-index: 1;
+    position: relative;
+    @include media-only ("sm", min) {
+        padding: 100px 0;
+    }
+    @include media-only ("lg", min) {
+        padding: 120px 0 120px;
     }
 }
 .rt-footer-shape {
@@ -169,6 +225,7 @@
     }
 }
 
+
 .footer-bottom-text {
     color: $color-gray-font;
     font-weight: $font-medium;
@@ -192,8 +249,6 @@
         right: 13.5%;
     }
 }
-
-
 
 .footer-widget-title {
     font-weight: $font-bold;

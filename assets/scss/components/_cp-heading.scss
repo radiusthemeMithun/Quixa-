@@ -47,6 +47,13 @@
             font-weight: $font-extra-bold;
         }
     }
+    &.style-4 {
+        @include media-only ("lg", min) {
+            width: 641px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
 }
 
 .bold-text {

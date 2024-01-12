@@ -128,6 +128,27 @@
 	}
 }
 
+.quixa-button-2 {
+	.quixa-btn-2 {
+		border-radius: $border-radius-sm;
+		background-color: $color-gray-69;
+		box-shadow: 5px 5px 0px 0px $color-gray-42;
+		padding: 13px 30px;
+		color: $color-white;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: $font-semibold;
+		&:hover {
+			background-color: $color-primary;
+			box-shadow: 5px 5px 0px 0px #EA7B22;
+		}
+		svg {
+			color: $color-white;
+		}
+	}
+}
+
 
 .arrow-button {
     .arrow-btn {

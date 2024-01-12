@@ -85,6 +85,23 @@
     }
 }
 
+.rt-contact-box.style-2 {
+    .contact-form-style-1 {
+        .submit-btn {
+            background-color: $color-gray-69;
+            box-shadow: 5px 5px 0px 0px $color-gray-42;
+            transition: all .4s ease-in-out;
+            font-size: 16px;
+            font-weight: $font-bold;
+            padding: 13px 30px;
+            &:hover {
+                box-shadow: none;
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
 
 
 

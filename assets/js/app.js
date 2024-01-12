@@ -310,6 +310,21 @@
       },
     },
   });
+
+  /*-------------------------------------
+     Testimonial Slider
+  -------------------------------------*/
+  var swiper3 = new Swiper(".rt-testimonial-slider-4", {
+    spaceBetween: 24,
+    slidesPerView: 1,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+
+  });
   /*-------------------------------------
     Project Slider
   -------------------------------------*/
