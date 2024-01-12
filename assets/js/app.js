@@ -274,7 +274,7 @@
   /*-------------------------------------
      Testimonial Slider
   -------------------------------------*/
-  var swiper3 = new Swiper(".rt-testimonial-slider-3", {
+  var swiper4 = new Swiper(".rt-testimonial-slider-3", {
     spaceBetween: 100,
     slidesPerView: 3,
     speed: 1000,
@@ -314,7 +314,7 @@
   /*-------------------------------------
      Testimonial Slider
   -------------------------------------*/
-  var swiper3 = new Swiper(".rt-testimonial-slider-4", {
+  var swiper5 = new Swiper(".rt-testimonial-slider-4", {
     spaceBetween: 24,
     slidesPerView: 1,
     speed: 1000,
@@ -328,7 +328,7 @@
   /*-------------------------------------
     Project Slider
   -------------------------------------*/
-  var swiper3 = new Swiper(".rt-project-slider", {
+  var swiper6 = new Swiper(".rt-project-slider", {
     spaceBetween: 24,
     slidesPerView: 3,
     speed: 1000,
@@ -366,6 +366,41 @@
       el: '.swiper-scrollbar',
       draggable: true,
     }
+  });
+
+    /*-------------------------------------
+     Testimonial Slider
+  -------------------------------------*/
+  var swiper7 = new Swiper(".rt-portfolio-slider", {
+    spaceBetween: 24,
+    slidesPerView: 3,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      374: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
   });
 
 

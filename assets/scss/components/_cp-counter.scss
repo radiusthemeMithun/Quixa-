@@ -5,7 +5,11 @@
 .rt-counter-wrap {
     padding-top: 120px;
 }
-
+.rt-counter-wrap-2 {
+    padding-top: 80px;
+    padding-bottom: 125px;
+    background-color: #FBFBFB;
+}
 .counterUp {
     display: inline-block;
     position: relative;
@@ -130,5 +134,51 @@
         @include media-only ("lg", min) {
             margin-top: -34px;
         }
+    }
+    &.style-2 {
+        .counterUp {
+            color: #00030C;
+            font-size: 100px;
+            font-weight: $font-extra-bold;
+            line-height: 130px;
+            letter-spacing: 5px;
+            text-transform: capitalize;
+            -webkit-text-stroke: 0;
+
+        }
+        .post-fix {
+            color: #00030C;
+            font-size: 100px;
+            font-weight: $font-extra-bold;
+            letter-spacing: 5px;
+            text-transform: capitalize;
+            -webkit-text-stroke: 0;
+            position: inherit;
+        }
+        .label {
+            font-size: 18px;
+            color: $color-body;
+            margin-top: -15px;
+        }
+    }
+}
+.counter-blr-shape {
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    background-color: rgba(186, 241, 130, .5);
+    filter: blur(125px);
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    z-index: -1;
+    &.style-2 {
+        background-color: rgba(226, 130, 241, .5);
+    }
+    &.style-3 {
+        background-color: rgba(130, 135, 241, .5);
+    }
+    &.style-4 {
+        background-color: rgba(130, 241, 208, .5);
     }
 }

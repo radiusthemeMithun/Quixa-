@@ -145,6 +145,14 @@
 		}
 		svg {
 			color: $color-white;
+			margin-left: 10px;
+		}
+		&.style-2 {
+			background-color: $color-primary;
+			box-shadow: 5px 5px 0px 0px #EA7B22;
+			&:hover {
+				box-shadow: none;
+			}
 		}
 	}
 }
