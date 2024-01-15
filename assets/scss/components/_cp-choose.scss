@@ -38,27 +38,9 @@
         right: 0;
     }
     &.style-2 {
-        &::before {
-            top: -35px;
-        }
-        .rt-choose-img {
-            img {
-                box-shadow: none;
-            }
+        .rt-image-box {
             .rt-blr-shape {
-                top: 0;
-            }
-            .quixa-button-2 {
-                position: absolute;
-                top: -25px;
-                right: 25px;
-                .quixa-btn-2 {
-                    background-color: #F35353;
-                    box-shadow: -8px 8px 0px 0px #D92F31;
-                    &:hover {
-                        box-shadow: none;
-                    }
-                }
+                background-color: rgba(202, 245, 251, .5);
             }
         }
     }

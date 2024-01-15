@@ -90,6 +90,26 @@
             }
         }
     }
+    &.style-3 {
+        .info-box {
+            background-color: #F8F8F7;
+            border-color: #F8F8F7;
+            .item-img {
+                a {
+                    img {
+                        transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+                    }
+                }
+            }
+            &:hover {
+                .item-img {
+                    img {
+                        transform: scale(1.08);
+                    }
+                }
+            }
+        }
+    }
 }
 
 

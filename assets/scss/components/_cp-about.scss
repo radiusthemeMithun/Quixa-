@@ -102,6 +102,21 @@
             }
         }
     }
+    &.style-2 {
+        padding-left: 0;
+        .text-box {
+            .rt-feature-list {
+                li {
+                    .rt-shape {
+                        background-color: #F0F0F0;
+                        svg {
+                            color: #323232;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .rt-about-img-2 {
@@ -110,7 +125,6 @@
         border-radius: 20px;
     }
 }
-
 
 .about-shape-box {
     position: absolute;
@@ -154,5 +168,44 @@
     img {
         border-radius: 0;
         animation: move2 2s infinite;
+    }
+}
+
+.rt-image-box {
+    z-index: 1;
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background-image: url(../../media/other/pricing-1.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        // background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .rt-blr-shape {
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        background-color: rgba(202, 251, 213, .5);
+        filter: blur(125px);
+        height: 427px;
+        width: 427px;
+        border-radius: 427px;
+    }
+    .quixa-button-2 {
+        position: absolute;
+        top: -25px;
+        right: 25px;
+        .quixa-btn-2 {
+            background-color: #F35353;
+            box-shadow: -8px 8px 0px 0px #D92F31;
+            &:hover {
+                box-shadow: none;
+            }
+        }
     }
 }
