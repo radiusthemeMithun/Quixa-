@@ -63,6 +63,98 @@
             }
         }
     }
+    &.style-4 {
+        background-color: $color-white;
+        .rt-blur-shape {
+            ul {
+                li {
+                    z-index: 1;
+                    border-radius: 322px;
+                    width: 322px;
+                    height: 322px;
+                    filter: blur(100px);
+                    &:nth-child(1) {
+                        background-color: #EEFDE8;
+                    }
+                    &:nth-child(2) {
+                        background-color: #FFFBE8;
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+        }
+        .footer-top {
+            .footer-contact {
+                .rt-contact {
+                    &.phone {
+                        a {
+                            color: $color-black;
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                    &.mail {
+                        a {
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-bottom-text {
+                a {
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+            .footer-link {
+                ul {
+                    li {
+                        a {
+                            &::after {
+                                background-color: $color-primary;
+                            }
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+            .input-group {
+                .form-control {
+                    border: 1px solid #E1E1E1;
+                    color: $color-black;
+                    &:focus {
+                        border-color: $color-black;
+                    }
+                }
+                .btn-outline-secondary {
+                    background-color: $color-lime;
+                    svg {
+                        color: $color-black;
+                    }
+                }
+            }
+            .item-social {
+                ul {
+                    li {
+                        a {
+                            background-color: #EEEEEE;
+                            svg {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .footer-top {
@@ -257,6 +349,10 @@
     margin-bottom: 15px;
     line-height: 30px;
     text-transform: uppercase;
+    &.style-2 {
+        color: $color-black;
+        font-weight: $font-extra-bold;
+    }
 }
 
 

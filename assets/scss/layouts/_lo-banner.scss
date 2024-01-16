@@ -221,6 +221,44 @@
             }
         }
     }
+    &.style-3 {
+        width: auto;
+        .title {
+            font-weight: $font-black;
+            line-height: 70px;
+            font-size: 65px;
+            img {
+                vertical-align: bottom;
+            }
+        }
+        p {
+            color: $color-paragraph;
+        }
+        .input-group {
+            @include media-only ("lg", min) {
+                width: 608px;
+                margin: 0;
+            }
+            .form-control {
+                height: 66px;
+            }
+            .btn-outline-secondary {
+                height: 66px;
+                box-shadow: 5px 5px 0px 0px #EA7B22;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 160px;
+                z-index: 5;
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-primary;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
 }
 
 
@@ -372,6 +410,51 @@
     svg {
         color: $color-gray-font;
         transition: all .3s ease-in-out;
+    }
+}
+
+.rt-hero-wrap-4 {
+    padding: 200px 0 130px;
+    background-color: #FAFAFA;
+    z-index: 1;
+    .rt-blr-shape {
+        top: 0;
+        left: 0;
+        transform: none;
+        background-color: rgba(251, 228, 202, .5);
+        height: 361px;
+        width: 361px;
+        border-radius: 361px;
+    }
+}
+
+.rt-hero-img {
+    z-index: 1;
+    .shape-list {
+        li {
+            position: absolute;
+            border-radius: 376px;
+            filter: blur(125px);
+            width: 376px;
+            height: 376px;
+            z-index: -1;
+            &:nth-child(1) {
+                background-color: rgba(206, 202, 251, .5);
+                bottom: -20%;
+                right: -20%;
+            }
+            &:nth-child(2) {
+                background-color: rgba(202, 251, 239, .5);
+                top: -20%;
+                left: -20%;
+            }
+        }
+    }
+    .hero-dot-shape {
+        top: -70px;
+        left: 0;
+        right: 0;
+        z-index: 2;
     }
 }
 
