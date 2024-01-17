@@ -25,6 +25,13 @@
     &.style-2 {
         padding-top: 170px;
     }
+    &.style-3 {
+        padding-top: 25px;
+        .rt-brand-layout {
+            border-bottom: 1px solid #E8E8E8;
+            padding: 60px 0 80px;
+        }
+    }
 }
 .upper-text {
     color: $color-gray-font;

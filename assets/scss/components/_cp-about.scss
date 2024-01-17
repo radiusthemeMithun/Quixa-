@@ -122,6 +122,58 @@
             }
         }
     }
+    &.style-3 {
+        position: relative;
+        @include media-only ("lg", min) {
+            padding-left: 65px;
+            padding-right: 30px;
+        }
+        .shape {
+            position: absolute;
+            top: -30px;
+            right: 0;
+            svg {
+                color: #E1E1E1;
+            }
+        }
+        .text-box {
+            .section-heading {
+                .heading-title {
+                    position: relative;
+                    z-index: 1;
+                    &::before {
+                        content: "";
+                        width: 367px;
+                        height: 19px;
+                        background-color: $color-lime;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+                .drop-cap {
+                    &::first-letter {
+                        -webkit-initial-letter: 3;
+                        initial-letter: 3;
+                        color: $color-primary;
+                        font-weight: $font-bold;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            .rt-feature-list {
+                li {
+                    .rt-shape {
+                        background-color: $color-green-400;
+                        svg {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .rt-about-img-2 {
@@ -213,5 +265,36 @@
                 box-shadow: none;
             }
         }
+    }
+}
+
+.rt-about-wrap-2 {
+    padding: 140px 0 0 0;
+    @include media-only ("lg", min) {
+        margin-bottom: -140px;
+    }
+}
+
+.rt-about-layout {
+    z-index: 1;
+    padding: 60px 80px 60px 0;
+    &::before {
+        content: "";
+        height: 100%;
+        width: 85%;
+        border-radius: 25px;
+        background-color: #FBFBFB;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .item-img {
+        img {
+            border-radius: $border-radius-lg;
+        }
+    }
+    .rt-about-content {
+       
     }
 }

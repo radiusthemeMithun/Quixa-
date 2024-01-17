@@ -46,10 +46,12 @@
     }
     &.style-4 {
         background-color: $color-primary;
-        padding: 300px 0 130px;
+        @include media-only ("lg", min) {
+            padding: 280px 0 130px;
+        }
         .section-heading {
             .subtitle {
-                color: #D8F1E5;
+                color: $color-green-400;
             }
             .heading-title {
                 color: $color-white;
@@ -121,6 +123,15 @@
                     }
                 }
             }
+            .quixa-button {
+                .quixa-btn {
+                    background-color: $color-gray-69;
+                    &:hover {
+                        background-color: $color-primary;
+                        box-shadow: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -183,7 +194,7 @@
             }
         }
         p {
-            color: #D8F1E5;
+            color: $color-green-400;
             margin-bottom: 27px;
             font-size: 16px;
             font-weight: $font-normal;

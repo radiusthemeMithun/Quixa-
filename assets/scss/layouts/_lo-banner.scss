@@ -227,8 +227,15 @@
             font-weight: $font-black;
             line-height: 70px;
             font-size: 65px;
+            z-index: 1;
             img {
                 vertical-align: bottom;
+            }
+            .shape {
+                position: absolute;
+                top: -50px;
+                left: -50px;
+                z-index: -1;
             }
         }
         p {
@@ -258,9 +265,38 @@
                 }
             }
         }
+        .hero-action-list {
+            gap: 15px;
+            li {
+                .counter-layout {
+                    .counterUp {
+                        color: $color-black-dark;
+                        font-size: 32px;
+                        font-weight: $font-extra-bold;
+                        line-height: 16px;
+                        -webkit-text-stroke: 0;
+
+                    }
+                    .post-fix {
+                        color: $color-black-dark;
+                        font-size: 32px;
+                        font-weight: $font-extra-bold;
+                        line-height: 16px;
+                        -webkit-text-stroke: 0;
+
+                    }
+                    .text {
+                        color: #004F43;
+                        font-weight: $font-medium;
+                    }
+                }
+            }
+        }
+    }
+    &.style-4 {
+        margin-bottom: 75px;
     }
 }
-
 
 .hero-wrap-2 {
     background-color: $color-primary;
@@ -426,6 +462,19 @@
         width: 361px;
         border-radius: 361px;
     }
+    &.style-2 {
+        background-color: $color-gray;
+        overflow: hidden;
+        .stroke-text {
+            font-size: 240px;
+            font-weight: $font-extra-bold;
+            line-height: 30px;
+            letter-spacing: 12px;
+            bottom: -80px;
+            color: transparent;
+            -webkit-text-stroke: 2px #DCDCDC;
+        }
+    }
 }
 
 .rt-hero-img {
@@ -455,6 +504,24 @@
         left: 0;
         right: 0;
         z-index: 2;
+    }
+    .rt-image-box {
+        z-index: 1;
+        .round-shape {
+            height: 570px;
+            width: 570px;
+            border-radius: 570px;
+            background-color: $color-green-400;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: -2;
+        }
+        &::before {
+            background-image: url(../../media/banner/shape-5.svg);
+            top: 100px;
+        }
     }
 }
 

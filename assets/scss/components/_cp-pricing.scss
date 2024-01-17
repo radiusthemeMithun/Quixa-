@@ -134,9 +134,6 @@
             color: $color-body;
         }
         .rt-price {
-            .item-currency {
-               
-            }
             .text {
                 font-weight: $font-medium;
                 color: $color-gray-font;
@@ -153,6 +150,18 @@
                 }
                 .text {
                     font-size: 18px;
+                }
+            }
+        }
+        .quixa-button {
+            .quixa-btn {
+                background-color: $color-gray-69;
+                border-color: $color-gray-69;
+                padding: 14px 30px;
+                &:hover {
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                    box-shadow: none;
                 }
             }
         }
