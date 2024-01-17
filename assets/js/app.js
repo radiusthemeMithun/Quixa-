@@ -325,6 +325,49 @@
     },
 
   });
+    /*-------------------------------------
+     Testimonial Slider
+    -------------------------------------*/
+    if ($(".rt-testimonial-slider-5")) {
+      $(".rt-testimonial-slider-5").each(function () {
+        let __swiperSlider = $(this)[0];
+        let btnPrev = $(this)
+          .closest(".rtMainWrap")
+          .find(".swiper-button-next")[0];
+        let btnNext = $(this)
+          .closest(".rtMainWrap")
+          .find(".swiper-button-prev")[0];
+        new Swiper(__swiperSlider, {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 24,
+          slideToClickedSlide: true,
+          // autoplay: {
+          //   delay: 5000,
+          //   disableOnInteraction: false,
+          // },
+          speed: 800,
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1,
+            },
+            992: {
+              slidesPerView: 1,
+            },
+            1200: {
+              slidesPerView: 1,
+            },
+          },
+          navigation: {
+            nextEl: btnPrev,
+            prevEl: btnNext,
+          },
+        });
+      });
+    }
   /*-------------------------------------
     Project Slider
   -------------------------------------*/

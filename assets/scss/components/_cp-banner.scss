@@ -67,3 +67,25 @@
         right: 160px;
     }
 }
+
+.rt-banner-layout-2 {
+    background-color: $color-primary;
+    border-radius: $border-radius-xl;
+    padding: 90px 70px;
+    .title {
+        color: $color-white;
+        font-weight: $font-bold;
+        font-size: 44px;
+    }
+    .quixa-button {
+        margin-left: 70px;
+        .quixa-btn {
+            padding: 15px 30px 14px;
+        }
+    }
+    .item-img {
+        position: absolute;
+        bottom: 0;
+        right: 110px;
+    }
+}

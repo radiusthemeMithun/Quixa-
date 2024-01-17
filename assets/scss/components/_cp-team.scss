@@ -26,6 +26,9 @@
             }
         }
     }
+    &.style-2 {
+        background-color: $color-gray;
+    }
 }
 
 .rt-team-box {
@@ -153,6 +156,72 @@
             svg {
                 color: $color-primary;
                 transition: all .31s ease-in-out;
+            }
+        }
+    }
+}
+
+.rt-team-box-2 {
+    border-radius: 15px;
+    background-color: $color-white;
+    padding: 27px 35px 0;
+    margin-bottom: 24px;
+    &:hover {
+        .item-img {
+            a {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    .item-img {
+        z-index: 1;
+        a {
+            img {
+                transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+            }
+        }
+        .bg-shape {
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    .content {
+        margin-left: 35px;
+        .inner-title {
+            font-size: 24px;
+            z-index: 1;
+            &::after {
+                content: "";
+                height: 6px;
+                width: 102px;
+                background-color: $color-lime;
+                position: absolute;
+                top: 15px;
+                left: 0;
+                z-index: -1;
+            }
+        }
+        .designation {
+            color: $color-gray-font;
+            font-weight: $font-medium;
+            margin-bottom: 15px;
+        }
+        .item-social {
+            ul {
+                li {
+                    a {
+                        background-color: transparent;
+                        border-radius: 0;
+                        height: auto;
+                        width: auto;
+                        svg {
+                            color: #575757;
+                        }
+                    }
+                }
             }
         }
     }

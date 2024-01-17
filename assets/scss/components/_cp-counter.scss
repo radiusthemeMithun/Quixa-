@@ -10,6 +10,15 @@
     padding-bottom: 125px;
     background-color: #FBFBFB;
 }
+.rt-counter-wrap-3 {
+    .text-box {
+        p {
+            color: $color-paragraph;
+            font-size: 18px;
+        }
+    }
+}
+
 .counterUp {
     display: inline-block;
     position: relative;
@@ -33,7 +42,6 @@
         transition: all 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.87);
     }
 }
-
 .post-fix {
     text-transform: uppercase;
     display: inline-block;
@@ -137,7 +145,7 @@
     }
     &.style-2 {
         .counterUp {
-            color: #00030C;
+            color: $color-black-dark;
             font-size: 100px;
             font-weight: $font-extra-bold;
             line-height: 130px;
@@ -147,7 +155,7 @@
 
         }
         .post-fix {
-            color: #00030C;
+            color: $color-black-dark;
             font-size: 100px;
             font-weight: $font-extra-bold;
             letter-spacing: 5px;
@@ -162,6 +170,7 @@
         }
     }
 }
+
 .counter-blr-shape {
     height: 160px;
     width: 160px;

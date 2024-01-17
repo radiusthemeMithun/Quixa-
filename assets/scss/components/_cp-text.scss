@@ -18,6 +18,19 @@
             color: $color-black;
         }
     }
+    .item-quote {
+        color: $color-body;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: $font-medium;
+        line-height: 28px;
+        z-index: 1;
+        .shape {
+            top: -20px;
+            right: 0;
+            z-index: -1;
+        }
+    }
 }
 
 

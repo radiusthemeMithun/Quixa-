@@ -32,6 +32,13 @@
             }
         }
     }
+    &.style-2 {
+        .section-heading {
+            .heading-title {
+                font-weight: $font-extra-bold;
+            }
+        }
+    }
 }
 
 

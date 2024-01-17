@@ -53,6 +53,19 @@
             margin-right: auto;
             margin-left: auto;
         }
+        .heading-title {
+            color: $color-black-dark;
+            text-transform: capitalize;
+            font-weight: $font-extra-bold;
+        }
+    }
+    &.style-5 {
+        .heading-title {
+            color: $color-black-dark;
+            text-transform: capitalize;
+            font-weight: $font-extra-bold;
+
+        }
     }
 }
 
