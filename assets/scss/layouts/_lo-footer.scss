@@ -160,19 +160,11 @@
         .rt-blur-shape {
             ul {
                 li {
-                    z-index: 1;
-                    border-radius: 322px;
-                    width: 322px;
-                    height: 322px;
-                    filter: blur(100px);
                     &:nth-child(1) {
                         background-color: #E8F0FD;
                     }
                     &:nth-child(2) {
                         background-color: #C9C8FF;
-                        top: 0;
-                        right: 0;
-                        left: auto;
                     }
                 }
             }
@@ -194,7 +186,7 @@
                     &.mail {
                         a {
                             color: $color-black-light;
-                            font-weight: $font-bold;
+                            font-weight: $font-medium;
                             &:hover {
                                 color: $color-primary;
                             }
@@ -242,6 +234,19 @@
                                 color: $color-black;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            border-top: 1px solid #e1e1e1;
+            background-color: $color-white;
+            padding: 40px 0;
+            p {
+                color: $color-gray-font;
+                a {
+                    &:hover {
+                        color: $color-black-light;
                     }
                 }
             }

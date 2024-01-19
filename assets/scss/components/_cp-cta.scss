@@ -5,6 +5,27 @@
         border-top: 0;
         border-bottom: 1px solid #1D212F;
     }
+    &.style-3 {
+        background-color: $color-black-light;
+        padding: 70px;
+        border-radius: $border-radius-xl;
+        .cta-title {
+            background: linear-gradient(90deg, #FFF 6.34%, #EFAAAA 51.31%, #FFF 93.66%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            .shape {
+                position: absolute;
+                top: -30px;
+                left: -30px;
+            }
+        }
+        p {
+            font-size: 30px;
+            font-weight: $font-medium;
+            color: $color-white;
+        }
+    }
 }
 
 .rt-cta-box {
@@ -16,6 +37,10 @@
     }
 }
 
+// .rt-cta-wrap {
+//     padding-top: 130px;
+// }
+
 .cta-title {
     background: linear-gradient(90deg, #FFF -2.1%, #8B7AF5 53.56%, #FFF 83.46%);
     background-clip: text;
@@ -24,4 +49,8 @@
     font-size: 40px;
     font-weight: $font-black;
     line-height: 48px;
+}
+
+.rt-cta-list {
+    gap: 10px;
 }

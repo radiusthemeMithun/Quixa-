@@ -129,6 +129,28 @@
             }
         }
     }
+    &.listing {
+        gap: 30px;
+        .item-content {
+            flex: 1;
+            .rt-tag {
+                a {
+                    background-color: #F0F7FF;
+                    border-radius: 5px;
+                    color: $color-primary;
+                    font-weight: $font-semibold;
+                }
+            }
+            .rt-title {
+                a {
+                    color: $color-black-light;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+    }
 }
 .blog-imagelayout {
     .rt-tag {
