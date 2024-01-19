@@ -149,12 +149,17 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                        <li class="action-list">
-                                            <div class="quixa-button-2">
-                                                <a href="index.html" class="quixa-btn-2">
-                                                    Get Started
-                                                </a>
-                                            </div>
+                                        <li class="action-list rt-logIn rt-signIn">
+                                            <a href="index.html">Sign In</a>
+                                        </li>
+                                        <li class="action-list offcanvas-menu-trigger-wrap">
+                                            <button type="button" class="offcanvas-menu-btn menu-status-open">
+                                                <span class="btn-hamburger">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </span>
+                                            </button>
                                         </li>
                                     </ul>
                                 </div>
@@ -271,6 +276,15 @@
                                     <div class="rt-image-box position-relative text-center">
                                         <img src="media/banner/banner-4.png" width="570" height="643" alt="hero-img">
                                         <div class="round-shape position-absolute"></div>
+                                    </div>
+                                    <ul class="element-list">
+                                        <li><img src="media/banner/element-4.png" width="196" height="97" alt="banner"></li>
+                                        <li><img src="media/banner/element-5.png" width="186" height="55" alt="banner"></li>
+                                    </ul>
+                                    <div class="hero-arrow position-absolute">
+                                        <svg width="150" height="98" viewBox="0 0 150 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.27152 94.4972C10.6975 87.3913 56.0103 46.2294 67.3918 43.038C70.0117 42.3639 72.6833 41.9023 75.3808 41.6577C82.2386 34.074 90.4303 27.8199 99.5539 23.2023C109.272 18.2478 119.63 14.649 130.343 12.505C133.614 11.8167 136.926 11.2105 140.31 10.7547L118.973 4.46008C116.65 3.77249 118.037 0.339284 120.409 1.05868C129.716 3.84487 139.074 6.60767 148.481 9.34704C150.003 9.78898 149.838 11.6772 148.952 12.5485L126.485 34.6868C124.772 36.3602 122.496 33.3719 124.181 31.7204L141.809 14.3466C128.719 15.7868 115.985 19.4244 104.137 25.1074C95.3951 29.1498 87.4467 34.7119 80.657 41.5385C83.9557 41.6638 87.221 42.2884 90.3422 43.3913C93.0239 44.3041 95.4709 45.8101 97.5008 47.7969C99.5306 49.7838 101.091 52.2002 102.065 54.8659C103.023 58.1071 103.146 61.5314 102.422 64.8176C101.698 68.1038 100.151 71.1441 97.9263 73.6531C95.4595 76.4383 92.4608 78.6996 89.1043 80.3057C85.7477 81.9118 82.1002 82.8307 78.3733 83.0092C72.032 83.3612 65.1661 80.8507 62.8255 74.368C59.4088 64.9252 66.3007 53.7639 71.5029 46.522L71.9492 45.9009C59.6294 47.9467 13.5701 90.2956 3.576 97.4636C1.59419 98.82 -0.621661 95.9677 1.27152 94.4972ZM66.362 64.8068C65.5218 68.1577 65.2479 72.1206 67.3446 75.1112C71.1079 80.6261 79.6359 79.7647 85.0075 77.9021C92.101 75.4566 98.1721 69.7121 99.2139 62.0428C99.511 59.5051 99.0932 56.9282 98.0076 54.6033C96.922 52.2784 95.212 50.2982 93.0708 48.8866C88.547 45.746 82.7855 45.0074 77.3196 45.3198C76.5423 46.2437 75.776 47.1818 75.0036 48.1705C71.0631 53.0882 68.1275 58.7397 66.362 64.8068Z" fill="currentColor"/>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -595,9 +609,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="rt-counter-wrap-3 section-padding">
+                <section class="rt-counter-wrap-3 section-padding counter-appear">
                     <div class="container">
-                        <div class="row">
+                        <div class="row align-items-center">
                             <div class="col-xl-5">
                                 <div class="text-box">
                                     <div class="section-heading position-relative mb-0 style-5">
@@ -611,9 +625,38 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-7">
+                            <div class="col-xl-3">
+                                <div class="donut-image position-relative">
+                                    <img src="media/other/donut.png" height="300" width="300" alt="image">
+                                    <div class="shape-icon position-absolute">
+                                        <img src="media/other/counter-finance.svg" alt="counter">
+                                    </div>
+                                    <ul class="dot-shape-list">
+                                        <li><img src="media/other/dot.svg" alt="dot-image"></li>
+                                        <li><img src="media/other/dot.svg" alt="dot-image"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
                                 <div class="rt-chart-counter-layout">
-                                    
+                                    <ul class="counter-listing d-flex align-items-center justify-content-between flex-wrap">
+                                        <li class="counting style-1">
+                                            <span class="counterUp" data-counter="46">46</span><span class="post-fix">%</span>
+                                            <p class="label mb-0 text-center">Investment</p>
+                                        </li>
+                                        <li class="counting style-2">
+                                            <span class="counterUp" data-counter="14">14</span><span class="post-fix">%</span>
+                                            <p class="label mb-0 text-center">Happy Clients</p>
+                                        </li>
+                                        <li class="counting style-3">
+                                            <span class="counterUp" data-counter="17">17</span><span class="post-fix">%</span>
+                                            <p class="label mb-0 text-center">Subscribers</p>
+                                        </li>
+                                        <li class="counting style-4">
+                                            <span class="counterUp" data-counter="23">23</span><span class="post-fix">%</span>
+                                            <p class="label mb-0 text-center">Modern Fact</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1311,6 +1354,70 @@
         </div>
         <!-- End main_content -->
 
+        <div class="offcanvas-menu-wrap" id="offcanvas-wrap" data-position="right">
+            <div class="close-btn offcanvas-close"><i class="fas fa-times"></i></div>
+            <div class="offcanvas-content">
+                <div class="offcanvas-logo">
+                    <a href="index.html"><img src="media/logo/dark-logo.svg" alt="Logo"></a>
+                </div>
+                <ul class="offcanvas-menu">
+                    <li class="nav-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blog.html">Blog Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="offcanvas-footer">
+                    <div class="item-title">Follow Me</div>
+                    <div class="item-social">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.85419 8.34934L8.25725 5.69228H5.73711V3.96802C5.73711 3.2411 6.08916 2.53253 7.21785 2.53253H8.36355V0.270328C8.36355 0.270328 7.32386 0.0908203 6.32981 0.0908203C4.25439 0.0908203 2.89781 1.36344 2.89781 3.66722V5.69228H0.59082V8.34934H2.89781V14.7726H5.73711V8.34934H7.85419Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://bd.linkedin.com/" target="_blank">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.75142 4.11048C4.91337 4.11048 3.43078 5.5934 3.43078 7.43186C3.43078 9.27033 4.91337 10.7532 6.75142 10.7532C8.58948 10.7532 10.0721 9.27033 10.0721 7.43186C10.0721 5.5934 8.58948 4.11048 6.75142 4.11048ZM6.75142 9.5912C5.56362 9.5912 4.59257 8.62282 4.59257 7.43186C4.59257 6.24091 5.56073 5.27253 6.75142 5.27253C7.94211 5.27253 8.91027 6.24091 8.91027 7.43186C8.91027 8.62282 7.93922 9.5912 6.75142 9.5912ZM10.9824 3.97462C10.9824 4.40533 10.6356 4.74932 10.2079 4.74932C9.77728 4.74932 9.43337 4.40244 9.43337 3.97462C9.43337 3.5468 9.78017 3.19992 10.2079 3.19992C10.6356 3.19992 10.9824 3.5468 10.9824 3.97462ZM13.1817 4.76088C13.1326 3.72313 12.8956 2.8039 12.1355 2.04654C11.3784 1.28919 10.4593 1.05215 9.42181 1.00012C8.3525 0.939414 5.14746 0.939414 4.07815 1.00012C3.04352 1.04926 2.12449 1.28629 1.36441 2.04365C0.604336 2.80101 0.370243 3.72024 0.318223 4.75799C0.257532 5.82754 0.257532 9.03329 0.318223 10.1028C0.367353 11.1406 0.604336 12.0598 1.36441 12.8172C2.12449 13.5745 3.04063 13.8116 4.07815 13.8636C5.14746 13.9243 8.3525 13.9243 9.42181 13.8636C10.4593 13.8145 11.3784 13.5774 12.1355 12.8172C12.8927 12.0598 13.1297 11.1406 13.1817 10.1028C13.2424 9.03329 13.2424 5.83043 13.1817 4.76088ZM11.8003 11.2504C11.5749 11.817 11.1385 12.2535 10.5691 12.4819C9.71659 12.8201 7.69357 12.742 6.75142 12.742C5.80927 12.742 3.78337 12.8172 2.9337 12.4819C2.36725 12.2564 1.93086 11.8199 1.70255 11.2504C1.36441 10.3977 1.44244 8.37422 1.44244 7.43186C1.44244 6.4895 1.3673 4.46314 1.70255 3.61329C1.92797 3.04671 2.36436 2.61022 2.9337 2.38186C3.78626 2.04365 5.80927 2.1217 6.75142 2.1217C7.69357 2.1217 9.71948 2.04654 10.5691 2.38186C11.1356 2.60733 11.572 3.04382 11.8003 3.61329C12.1384 4.46603 12.0604 6.4895 12.0604 7.43186C12.0604 8.37422 12.1384 10.4006 11.8003 11.2504Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.0817 3.61615C14.0911 3.73894 14.0911 3.86176 14.0911 3.98456C14.0911 7.72989 11.0634 12.0454 5.52975 12.0454C3.82493 12.0454 2.24124 11.5805 0.909058 10.7736C1.15128 10.7999 1.38415 10.8086 1.6357 10.8086C3.04237 10.8086 4.3373 10.3613 5.37137 9.59821C4.04851 9.57188 2.93992 8.75615 2.55796 7.63342C2.74429 7.65972 2.9306 7.67727 3.12625 7.67727C3.3964 7.67727 3.66658 7.64217 3.9181 7.5808C2.53935 7.31764 1.50525 6.17738 1.50525 4.80028V4.76521C1.90582 4.97572 2.37165 5.10729 2.86536 5.12481C2.05487 4.61607 1.52389 3.74772 1.52389 2.76533C1.52389 2.23906 1.67292 1.75664 1.93378 1.33561C3.41501 3.05478 5.64153 4.17749 8.13816 4.30031C8.09159 4.0898 8.06363 3.87054 8.06363 3.65125C8.06363 2.08994 9.40513 0.818115 11.0727 0.818115C11.939 0.818115 12.7216 1.1602 13.2712 1.71279C13.9513 1.59 14.6034 1.35316 15.181 1.02863C14.9574 1.68649 14.4823 2.23908 13.8581 2.58991C14.4637 2.52854 15.0506 2.37062 15.5909 2.15136C15.181 2.7127 14.6686 3.21265 14.0817 3.61615Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.73719 0.0908203C3.73741 0.0908203 0.772705 2.10288 0.772705 5.35925C0.772705 7.43015 1.93052 8.60679 2.63222 8.60679C2.92168 8.60679 3.08833 7.79491 3.08833 7.56546C3.08833 7.29189 2.3954 6.70945 2.3954 5.57105C2.3954 3.20599 4.18474 1.52927 6.50037 1.52927C8.49146 1.52927 9.96503 2.66767 9.96503 4.75916C9.96503 6.32116 9.34227 9.251 7.32487 9.251C6.59685 9.251 5.97409 8.72151 5.97409 7.96258C5.97409 6.85065 6.74597 5.77402 6.74597 4.62679C6.74597 2.67944 4.00055 3.03243 4.00055 5.38572C4.00055 5.87991 4.06195 6.42705 4.28123 6.87712C3.87775 8.62444 3.05324 11.2278 3.05324 13.028C3.05324 13.584 3.13219 14.1311 3.18481 14.6871C3.28422 14.7989 3.23452 14.7871 3.38655 14.7312C4.86013 12.7015 4.80751 12.3044 5.47413 9.64812C5.83375 10.3365 6.76351 10.7071 7.5003 10.7071C10.6053 10.7071 12 7.66253 12 4.91801C12 1.99699 9.49138 0.0908203 6.73719 0.0908203Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div id="template-search" class="template-search">
             <button type="button" class="close">×</button>
             <form class="search-form">
@@ -1335,6 +1442,7 @@
     <script src="dependencies/countdown/jquery.countdown.min.js"></script>
     <script src="dependencies/select2/js/select2.min.js"></script>
     <script src="dependencies/headroom/headroom.js"></script>
+   
     <!-- custom -->
     <script src="assets/js/app.js"></script>
 </body>

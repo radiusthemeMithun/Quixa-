@@ -155,6 +155,98 @@
             }
         }
     }
+    &.style-5 {
+        background-color: $color-white;
+        .rt-blur-shape {
+            ul {
+                li {
+                    z-index: 1;
+                    border-radius: 322px;
+                    width: 322px;
+                    height: 322px;
+                    filter: blur(100px);
+                    &:nth-child(1) {
+                        background-color: #E8F0FD;
+                    }
+                    &:nth-child(2) {
+                        background-color: #C9C8FF;
+                        top: 0;
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+        }
+        .footer-top {
+            .footer-contact {
+                .rt-contact {
+                    color: $color-body;
+                    font-weight: $font-medium;
+                    &.phone {
+                        a {
+                            color: $color-black-light;
+                            font-weight: $font-bold;
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                    &.mail {
+                        a {
+                            color: $color-black-light;
+                            font-weight: $font-bold;
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-link {
+                ul {
+                    li {
+                        a {
+                            color: $color-body;
+                            font-weight: $font-medium;
+                            &::after {
+                                background-color: $color-primary;
+                            }
+                            &:hover {
+                                color: $color-primary;
+                            }
+                        }
+                    }
+                }
+            }
+            .input-group {
+                .form-control {
+                    border: 1px solid #E1E1E1;
+                    color: $color-black;
+                    &:focus {
+                        border-color: $color-black;
+                    }
+                }
+                .btn-outline-secondary {
+                    background-color: $color-primary;
+                    svg {
+                        color: $color-white;
+                    }
+                }
+            }
+            .item-social {
+                ul {
+                    li {
+                        a {
+                            background-color: #EEEEEE;
+                            svg {
+                                color: $color-black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .footer-top {
@@ -351,6 +443,10 @@
     text-transform: uppercase;
     &.style-2 {
         color: $color-black;
+        font-weight: $font-extra-bold;
+    }
+    &.style-3 {
+        color: $color-black-light;
         font-weight: $font-extra-bold;
     }
 }

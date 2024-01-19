@@ -29,6 +29,7 @@
 	--color-white: #fff;
 	--color-black: #000;
     --color-black-dark: #00030C;
+    --color-black-light: #071952;
 	--color-body: #343C4D;
     --color-gray-font: #7F838C;
     --color-paragraph: #343C4D;
@@ -50,7 +51,14 @@
 .color-scheme-3 {
     --color-primary: #083935;
 }
-
+.color-scheme-4 {
+    --color-primary: #007BFF;
+}
+// .heading-title {
+//     h1, h2, h3, h4, h5, h6 {
+//         --color-black-light: #071952; 
+//     }
+// }
 
 /* ===========================
 // Typography

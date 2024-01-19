@@ -527,6 +527,28 @@ if (yPopup.length) {
         );
       });
 
+      // // pie chart
+      // $(".chart-bar.style-1").easyPieChart({
+      //   barColor: "#0f5bf5",
+      //   trackColor: "#cccccc",
+      //   scaleColor: false,
+      //   lineWidth: 4,
+      //   size: 120,
+      //   lineCap: "square",
+      //   animate: 2000,
+      // });
+
+      // // pie chart
+      // $(".chart-bar.style-3").easyPieChart({
+      //   barColor: "#fff",
+      //   trackColor: "#cccccc",
+      //   scaleColor: false,
+      //   lineWidth: 4,
+      //   size: 120,
+      //   lineCap: "square",
+      //   animate: 2000,
+      // });
+
       counter = false;
     }
   });
@@ -625,6 +647,58 @@ if (yPopup.length) {
     scrollContainer: null,
   });
   wow.init();
+
+
+
+
+    /*------------------------------------
+   //  Offcanvas Menu activation code
+   -----------------------------------*/
+   $('#wrapper').on('click', '.offcanvas-menu-btn', function (e) {
+    e.preventDefault();
+    var $this = $(this),
+        wrapper = $(this).parents('body').find('>#wrapper'),
+        wrapMask = $('<div />').addClass('offcanvas-mask'),
+        offCancas = $('#offcanvas-wrap'),
+        position = offCancas.data('position') || 'left';
+
+    if ($this.hasClass('menu-status-open')) {
+        wrapper.addClass('open').append(wrapMask);
+        $this.removeClass('menu-status-open').addClass('menu-status-close');
+        offCancas.css({
+            'transform': 'translateX(0)'
+        });
+    } else {
+        removeOffcanvas();
+    }
+
+    function removeOffcanvas() {
+        wrapper.removeClass('open').find('> .offcanvas-mask').remove();
+        $this.removeClass('menu-status-close').addClass('menu-status-open');
+        if (position === 'left') {
+            offCancas.css({
+                'transform': 'translateX(-105%)'
+            });
+        } else {
+            offCancas.css({
+                'transform': 'translateX(105%)'
+            });
+        }
+    }
+    $(".offcanvas-mask, .offcanvas-close").on('click', function () {
+        removeOffcanvas();
+    });
+
+    return false;
+});
+
+
+    /*===================================
+  //Humburger
+  =====================================*/
+  $(".humburger").on("click", function () {
+    $(".humburger").toggleClass("active");
+  });
 
 
 
