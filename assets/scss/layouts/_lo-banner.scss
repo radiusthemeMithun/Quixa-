@@ -309,6 +309,12 @@
             }
         }
     }
+    &.style-5 {
+        .title {
+           color: $color-black-light;
+           font-weight: $font-extra-bold;
+        }
+    }
 }
 
 .hero-wrap-2 {
@@ -490,8 +496,12 @@
             -webkit-text-stroke: 2px #DCDCDC;
         }
     }
+    &.style-3 {
+        background-color: $color-white;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
 }
-
 .rt-hero-img {
     z-index: 1;
     .shape-list {
@@ -569,5 +579,19 @@
             color: $color-primary;
         }
     }
+    &.style-2 {
+        .rt-image-box {
+            .round-shape {
+                background-color: #FFDFD4;
+                filter: blur(200px);
+            }
+        }
+    }
+}
+
+.hero-layout {
+    border-radius: 30px;
+    background-color: #F0F7F9;
+    padding: 60px 60px 0;
 }
 
