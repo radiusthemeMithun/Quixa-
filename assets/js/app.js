@@ -368,6 +368,84 @@
         });
       });
     }
+
+      /*-------------------------------------
+     Testimonial Slider
+    -------------------------------------*/
+    if ($(".rt-testimonial-slider-6")) {
+      $(".rt-testimonial-slider-6").each(function () {
+        let __swiperSlider = $(this)[0];
+        let btnPrev = $(this)
+          .closest(".rtMainWrap")
+          .find(".swiper-button-next")[0];
+        let btnNext = $(this)
+          .closest(".rtMainWrap")
+          .find(".swiper-button-prev")[0];
+        new Swiper(__swiperSlider, {
+          slidesPerView: 1,
+          loop: true,
+          spaceBetween: 24,
+          slideToClickedSlide: true,
+          // autoplay: {
+          //   delay: 5000,
+          //   disableOnInteraction: false,
+          // },
+          speed: 800,
+          breakpoints: {
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1,
+            },
+            992: {
+              slidesPerView: 1,
+            },
+            1200: {
+              slidesPerView: 1,
+            },
+          },
+          navigation: {
+            nextEl: btnPrev,
+            prevEl: btnNext,
+          },
+        });
+      });
+    }
+  /*-------------------------------------
+    Portfolio Slider
+  -------------------------------------*/
+  var swiper7 = new Swiper(".rt-portfolio-slider", {
+    spaceBetween: 24,
+    slidesPerView: 3,
+    speed: 1000,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      374: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
   /*-------------------------------------
     Project Slider
   -------------------------------------*/
@@ -411,40 +489,41 @@
     }
   });
 
-    /*-------------------------------------
-     Testimonial Slider
-  -------------------------------------*/
-  var swiper7 = new Swiper(".rt-portfolio-slider", {
-    spaceBetween: 24,
-    slidesPerView: 3,
-    speed: 1000,
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
 
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
+  /*-------------------------------------
+    Screen Slider
+    -------------------------------------*/
+
+    var swiper8 = new Swiper(".rt-featured-screen-slider", {
+      spaceBetween: 24,
+      slidesPerView: 4,
+      speed: 1000,
+      loop: true,
+      autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
       },
-      374: {
-        slidesPerView: 2,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        374: {
+          slidesPerView: 2,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+        1200: {
+          slidesPerView: 4,
+        },
       },
-      576: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-    },
-  });
+    });
 
 
 /* ===================================

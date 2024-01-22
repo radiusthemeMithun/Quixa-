@@ -59,6 +59,13 @@
 
         }
     }
+    &.style-5 {
+        .section-heading {
+            @include media-only ("lg", min) {
+                width: 722px;
+            }
+        }
+    }
 }
 
 .rt-service-box {
@@ -132,6 +139,104 @@
                     }
                 }
             }
+        }
+    }
+    &.style-4 {
+        border-radius: 25px;
+        background-color: #F7FAFD;
+        border: 0;
+        z-index: 1;
+        overflow: hidden;
+        padding: 60px 56px;
+        &:hover {
+            .info-box {
+                .item-icon {
+                    img {
+                        transform: rotate(0);
+                    }
+                    &.style-2 {
+                        img {
+                            transform: rotate(0deg);
+                        }
+                    }
+                    &.style-3 {
+                        img {
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+        }
+        .shape {
+            height: 211px;
+            width: 211px;
+            background-color: #F5FFF2;
+            border-radius: 50%;
+            filter: blur(50px);
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+            &.style-2 {
+                background-color: #F0E9FF;
+            }
+            &.style-3 {
+                background-color: #FFEFEF;
+            }
+        }
+        .info-box {
+            .item-icon {
+                img {
+                    transform: rotate(36.44deg);
+                }
+                &.style-2 {
+                    img {
+                        transform: rotate(90deg);
+                    }
+                }
+                &.style-3 {
+                    img {
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            .title {
+                a {
+                    color: $color-black-light;
+                    &:hover {
+                        color: $color-primary;
+                    }
+                }
+            }
+            .quixa-button {
+                .quixa-btn {
+                    background-color: $color-white;
+                    span {
+                        svg {
+                            color: $color-primary;
+                            top: -1px;
+                        }
+                    }
+                    &:hover {
+                        background-color: $color-primary;
+                        span {
+                            svg {
+                                color: $color-white;
+                            }
+                        } 
+                    }
+                    .btn-wrap {
+                        .btn-text1 {
+                            color: $color-black-light;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style-5 {
+        .shape {
+            background-color: #F0E9FF;
         }
     }
 }

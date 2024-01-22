@@ -103,4 +103,17 @@
             }
         }
     }
+    &.style-4 {
+        background-color: #FEFAED;
+        .rt-marquee {
+            .rt-marquee-item {
+                .entry-title {
+                    color: $color-black-dark;
+                    svg {
+                        color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
 }
