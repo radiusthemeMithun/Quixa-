@@ -1,0 +1,28 @@
+/**
+ * Theme - Dark.
+ */
+
+body {
+    &.dark-theme {
+        --color-body: #BABABA;
+        --color-paragraph: #BABABA;
+        --color-dark-body: #1B1B1B;
+        --color-dark-body2: #202020;
+        --font-title: "Syne", sans-serif;
+        background-image: url(../../media/noise.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        background-color: $color-dark-body;
+        .section-heading {
+            .heading-title {
+                color: $color-white;
+                font-weight: $font-bold;
+            }
+        }
+        .footer-widget-title {
+            font-family: $font-body;
+        }
+    }
+}

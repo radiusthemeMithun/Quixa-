@@ -258,6 +258,64 @@
             }
         }
     }
+    &.style-6 {
+        background-color: transparent;
+        .footer-top {
+            .footer-contact {
+                .address {
+                    color: $color-white;
+                }
+            }
+            .input-group {
+                .form-control {
+                    border-color: #e1e1e1;
+                }
+                .btn-outline-secondary {
+                    svg {
+                        color: $color-black-dark;
+                    }
+                }
+            }
+            .footer-link {
+                ul {
+                    li {
+                        a {
+                            color: $color-body;
+                        }
+                    }
+                }
+            }
+            .item-social {
+                ul {
+                    li {
+                        a {
+                            background-color: #EEEEEE;
+                            &:hover {
+                                background-color: $color-primary;
+                                svg {
+                                    color: $color-black;
+                                }
+                            }
+                            svg {
+                                color: $color-black-dark;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+        .footer-bottom {
+            background-color: transparent;
+            border-top: 1px solid #2C2C2C;
+            padding: 20px 0;
+            .footer-bottom-text {
+                color: $color-body;
+                a {
+                    color: $color-body;
+                }
+            }
+        }
+    }
 }
 
 .footer-top {

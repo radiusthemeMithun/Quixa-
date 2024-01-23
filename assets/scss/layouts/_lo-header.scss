@@ -81,12 +81,40 @@
                     background-color: $color-white;
                 }
             }
+            &.style-2 {
+                a {
+                    border-radius: 8px;
+                    color: $color-primary;
+                    border-color: $color-primary;
+                    &:hover {
+                        background-color: $color-primary;
+                        color: $color-white;
+                    }
+                }
+            }
         }
         .rt-signIn {
             a {
                 background-color: $color-primary;
                 border-color: $color-primary;
                 padding: 12px 35px;
+            }
+        }
+        .rt-register {
+            a {
+                font-weight: $font-semibold;
+                color: $color-white;
+                transition: all .3s ease-in-out;
+                border: 1px solid $color-primary;
+                background-color: $color-primary;
+                border-radius: 8px;
+                padding: 8px 30px;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color: transparent;
+                    border-color: $color-primary;
+                    color: $color-primary;
+                }
             }
         }
         .header-search-icon {
@@ -201,6 +229,15 @@
                             color: $color-white;
                         }
                     }
+                }
+            }
+        }
+    }
+    &.style-3 {
+        .menu {
+            .menu-item {
+                .menu-link {
+                    color: $color-black-light;
                 }
             }
         }

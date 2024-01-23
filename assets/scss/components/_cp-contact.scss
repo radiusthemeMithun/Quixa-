@@ -39,6 +39,48 @@
             }
         }
     }
+    &.style-3 {
+        background-color: $color-primary;
+        .section-heading {
+            z-index: 1;
+            .shape {
+                top: -50px;
+                left: -50px;
+                z-index: -1;
+            }
+            .heading-title {
+                font-family: $font-body;
+                color: $color-black;
+            }
+            p {
+                color: $color-black;
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+        }
+        .contact-form-style-1 {
+            .form-group {
+                .rt-form-control {
+                    border-bottom: 1px solid #92B511;
+                    &::placeholder {
+                        color: #7A9B00;
+                    }
+                }
+                .submit-btn {
+                    background-color: $color-white;
+                    box-shadow: 4px 4px 0px 0px #97BF00;
+                    font-weight: $font-bold;
+                    padding: 16px 80px;
+                    color: $color-black-dark;
+                    font-size: 16px;
+                    font-weight: $font-bold;
+                    &:hover {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
