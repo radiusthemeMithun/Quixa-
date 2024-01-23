@@ -230,6 +230,12 @@
                     li {
                         a {
                             background-color: #EEEEEE;
+                            &:hover {
+                                background-color: $color-primary;
+                                svg {
+                                    color: $color-white;
+                                }
+                            }
                             svg {
                                 color: $color-black;
                             }

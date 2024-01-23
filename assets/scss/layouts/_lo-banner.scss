@@ -313,6 +313,49 @@
         .title {
            color: $color-black-light;
            font-weight: $font-extra-bold;
+           margin-bottom: 50px;
+        }
+        .hero-action-list {
+            li {
+                .counter-layout {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        height: 50px;
+                        width: 2px;
+                        background-color: #CFD3D1;
+                        top: 0;
+                        right: -18px;
+                        position: absolute;
+                    }
+                    .counterUp {
+                        color: $color-black-light;
+                    }
+                    .text {
+                        color: $color-black-light;
+                        font-weight: $font-semibold;
+                    }
+                }
+                .rating-area {
+                    margin-left: 20px;
+                    .rating {
+                        color: $color-black-light;
+                        font-size: 32px;
+                        font-weight: $font-extra-bold;
+                        line-height: 16px;
+                        margin-bottom: 10px;
+                    }
+                    .rt-rating {
+                        margin-bottom: 0;
+                       
+                        .label {
+                            color: $color-black-light;
+                            font-weight: $font-medium;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -586,12 +629,47 @@
                 filter: blur(200px);
             }
         }
+        .element-list {
+            li {
+                border-radius: 10px;
+                border: 1px solid #737373;
+                box-shadow: 11px 11px 0px 0px rgba(0, 0, 0, 0.27);
+                &:nth-child(1) {
+                    bottom: 220px;
+                    left: -50px;
+                    padding: 25px;
+    
+                }
+                &:nth-child(2) {
+                    right: 30px;
+                    padding: 20px;
+                    top: 42%;
+    
+                }
+            }
+        }
     }
 }
 
 .hero-layout {
-    border-radius: 30px;
-    background-color: #F0F7F9;
-    padding: 60px 60px 0;
+    padding: 130px 0 0 0;
+    margin: 0 120px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        content: "";
+        height: 100%;
+        width: 100%;
+        border-radius: 30px;
+        background-color: #F0F7F9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // left: -100%;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
 }
 
