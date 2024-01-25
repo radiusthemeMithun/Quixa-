@@ -205,3 +205,96 @@
         }
     }
 }
+
+.rt-portfolio-wrap-3 {
+    padding-top: 130px;
+}
+
+.rt-portfolio-box-2 {
+    margin-bottom: 24px;
+    &:hover {
+        .portfolio-img {
+            &::before {
+                height: 100%;
+            }
+            .img-grid-item {
+                img {
+                    filter: grayscale(100%);
+                }
+            }
+            .content {
+                bottom: 40px;
+
+            }
+        }
+    }
+    .portfolio-img {
+        &::before {
+            content: "";
+            height: 0%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, .8);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: height .5s;
+            z-index: 1;
+            border-radius: $border-radius-lg;
+        }
+        .img-grid-item {
+            img {
+                border-radius: $border-radius-lg;
+                filter: grayscale(0);
+                transition: all .5s ease;
+            }
+        }
+        .content {
+            bottom: -70px;
+            left: 40px;
+            right: 40px;
+            transition: all .5s ease;
+            z-index: 2;
+            .title-box {
+                .title {
+                    font-size: 24px;
+                    font-weight: $font-bold;
+                    a {
+                        color: $color-white;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+                .designation {
+                    color: $color-white;
+                    font-family: $font-title;
+                    font-size: 14px;
+                    font-weight: $font-medium;
+                    text-transform: capitalize;
+                }
+            }
+            .arrow-button {
+                a {
+                    height: 50px;
+                    width: 50px;
+                    background-color: $color-primary;
+                    border-radius: $border-radius-md;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        svg {
+                            animation: headShake 1.5s ease;
+                        }
+                    }
+                    svg {
+                        color: $color-black-dark;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -169,6 +169,25 @@
             margin-top: -15px;
         }
     }
+    &.style-3 {
+        .counterUp {
+            background-image: linear-gradient(to top, #F8FFDD, #405100);
+            -webkit-text-stroke-color: transparent;
+            background-clip: text;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-fill-color: transparent;
+        }
+        .post-fix {
+            background-image: linear-gradient(to top, #F8FFDD, #405100);
+            -webkit-text-stroke-color: transparent;
+            background-clip: text;
+            -webkit-text-stroke-color: #000;
+            -webkit-text-fill-color: transparent;
+        }
+        .label {
+            color: #e1e1e1;
+        }
+    }
 }
 
 .counter-blr-shape {

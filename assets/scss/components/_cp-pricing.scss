@@ -23,6 +23,7 @@
 }
 .rt-pricing-wrap-3 {
     background-color: transparent;
+    z-index: 1;
 }
 
 .bg-box-shape {
@@ -44,6 +45,23 @@
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
+}
+.rt-blur-shape2 {
+    ul {
+        li {
+            width: 284px;
+            height: 284px;
+            border-radius: 284px;
+            filter: blur(125px);
+            z-index: -1;
+            position: absolute;
+            &:nth-child(1) {
+                background-color: #413240;
+                top: 20%;
+                right: 10%;
+            }
+        }
+    }
 }
 .rt-pricing-box {
     border-radius: $border-radius-xl;
@@ -165,6 +183,56 @@
                     background-color: $color-primary;
                     border-color: $color-primary;
                     box-shadow: none;
+                }
+            }
+        }
+    }
+    &.style-5 {
+        padding: 40px 50px;
+        .title {
+            font-family: $font-body;
+        }
+        .rt-price {
+            .text {
+                font-weight: $font-medium;
+                color: $color-gray-font;
+            }
+        }
+        .rt-feature-list {
+            li {
+                margin-bottom: 15px;
+                .rt-shape {
+                    background-color: #EFEFEF;
+                    svg {
+                        color: $color-black-dark;
+                    }
+                }
+                .text {
+                    color: #343C4D;
+                }
+            }
+        }
+        .quixa-button {
+            .quixa-btn {
+                padding: 16px 70px;
+                border: 1px solid #E1E0E0;
+                background-color: #F0F0F0;
+                svg {
+                    color: $color-black-dark;
+                }
+                .btn-text1 {
+                    color: $color-black-dark;
+                }
+                &:hover {
+                    background-color: $color-primary;
+                    border-color: $color-primary;
+                    box-shadow: none;
+                    svg {
+                        color: $color-black-dark;
+                    }
+                    .btn-text2 {
+                        color: $color-black-dark;
+                    }
                 }
             }
         }

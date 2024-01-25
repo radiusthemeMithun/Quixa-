@@ -41,6 +41,7 @@
     }
     &.style-3 {
         background-color: $color-primary;
+        background-image: inherit;
         .section-heading {
             z-index: 1;
             .shape {

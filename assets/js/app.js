@@ -143,10 +143,10 @@
       slidesPerView: 6,
       speed: 1000,
       loop: true,
-      autoplay: {
-          delay: 5000,
-          disableOnInteraction: false,
-      },
+      // autoplay: {
+      //     delay: 5000,
+      //     disableOnInteraction: false,
+      // },
       breakpoints: {
         0: {
           slidesPerView: 1,
@@ -323,7 +323,10 @@
         delay: 5000,
         disableOnInteraction: false,
     },
-
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
   });
     /*-------------------------------------
      Testimonial Slider

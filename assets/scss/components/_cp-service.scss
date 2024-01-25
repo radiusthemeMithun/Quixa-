@@ -69,7 +69,7 @@
 }
 
 .rt-service-box {
-    border-radius: 20px;
+    border-radius: $border-radius-xl;
     border: 1px solid #E5E8F4;
     background-color: $color-white;
     padding: 60px 56px 80px;
@@ -237,6 +237,51 @@
     &.style-5 {
         .shape {
             background-color: #F0E9FF;
+        }
+    }
+    &.style-6 {
+        border-radius: $border-radius-xl;
+        border: 1px solid #2A2A2A;
+        background-color: #1E1E1E;
+        box-shadow: 14px 11px 10px 0px rgba(0, 0, 0, 0.08);
+        padding: 50px;
+        margin-bottom: 24px;
+        &:hover {
+            .info-box {
+                .item-icon {
+                    svg {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .info-box {
+            .item-icon {
+                background-image: linear-gradient(139deg, #2E2E2E 3.23%, #2A2A2A 96.77%);
+                border: 1px solid #3d3d3d;
+                height: 86px;
+                width: 86px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                svg {
+                    color: $color-primary;
+                    transition: all .3s ease-in-out;
+                }
+            }
+            .content {
+                flex: 1;
+                margin-left: 20px;
+                .title {
+                    a {
+                        color: $color-white;
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
         }
     }
 }

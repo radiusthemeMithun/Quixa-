@@ -35,6 +35,16 @@
     &.style-4 {
         padding-top: 100px;
     }
+    &.style-5 {
+        padding-top: 0;
+        .rt-brand-box {
+            .rt-brand-img  {
+                img {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 .upper-text {
     color: $color-gray-font;
