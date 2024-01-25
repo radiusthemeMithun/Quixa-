@@ -66,6 +66,26 @@
             }
         }
     }
+    &.style-6 {
+        .rt-blur-shape2 {
+            ul {
+                li {
+                    &:nth-child(1) {
+                        background-color: #362B23;
+                        top: auto;
+                        right: 10%;
+                        bottom: -10%;
+                    }
+                    &:nth-child(2) {
+                        background-color: #233630;
+                        bottom: auto;
+                        left: 10%;
+                        top: 25%;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .rt-service-box {

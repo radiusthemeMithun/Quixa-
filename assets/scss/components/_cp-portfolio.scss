@@ -208,6 +208,23 @@
 
 .rt-portfolio-wrap-3 {
     padding-top: 130px;
+    z-index: 1;
+    position: relative;
+    .rt-blur-shape2 {
+        ul {
+            li {
+                background-color: #413532;
+                &:nth-child(1) {
+                    top: 10%;
+                    right: 10%;
+                }
+                &:nth-child(2) {
+                    bottom: -5%;
+                    left: 10%;
+                }
+            }
+        }
+    }
 }
 
 .rt-portfolio-box-2 {

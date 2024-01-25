@@ -28,6 +28,17 @@
     &.style-4 {
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     }
+    &.style-5 {
+        &.scrolling {
+            background-color: $color-black-dark;
+            .navbar-wrap {
+                padding: 30px 70px;
+            }
+        }
+        .navbar-wrap {
+            padding: 50px 70px;
+        }
+    }
 }
 
 
@@ -92,6 +103,13 @@
                     }
                 }
             }
+            &.style-3 {
+                a {
+                    &:hover {
+                        color: $color-black;
+                    }
+                }
+            }
         }
         .rt-signIn {
             a {
@@ -145,6 +163,26 @@
         border-radius: 50%;
         &:focus {
             outline: none;
+        }
+        &.style-2 {
+            height: auto;
+            width: auto;
+            border: 0;
+            .btn-hamburger {
+                span {
+                    width: 26px;
+                    height: 3px;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    background-color: $color-white;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:nth-child(2) {
+                        width: 40px;
+                    }
+                }
+            }
         }
     }
     .btn-hamburger {

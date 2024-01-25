@@ -16,6 +16,10 @@ body {
         background-size: cover;
         background-position: top;
         background-color: $color-dark-body;
+        p {
+            font-size: 18px;
+            font-weight: $font-normal;
+        }
         main {
             background-color: inherit;
         }
