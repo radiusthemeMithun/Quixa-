@@ -60,6 +60,9 @@
 .color-scheme-5 {
     --color-primary: #C6F613;
 }
+.color-scheme-6 {
+    --color-primary: #F94627;
+}
 
 /* ===========================
 // Typography
@@ -265,29 +268,6 @@ html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-// .bg-wrap {
-//     background-image: url(../../media/noise.svg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     position: relative;
-//     z-index: 1;
-//     &::after, &::before {
-//         content: "";
-//         height: 100%;
-//         width: 100%;
-//         background-color: $color-dark-body;
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         bottom: 0;
-//         right: 0;
-//     }
-//     // &::before {
-//     //     background-color: $color-dark-body2;
-//     // }
-// }
-
 
 main {
     position: relative;

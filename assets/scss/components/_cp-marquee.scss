@@ -21,9 +21,9 @@
                 transform: rotate(2.041deg);
             }
             &:nth-child(4) {
-                top: 0;
+                top: -10px;
                 right: 0;
-                transform: rotate(-1.42deg);
+                transform: rotate(-3deg);
             }
         }
     }
@@ -111,6 +111,51 @@
                     color: $color-black-dark;
                     svg {
                         color: $color-secondary;
+                    }
+                }
+            }
+        }
+    }
+    &.style-5 {
+       background-color: $color-primary;
+       padding: 20px 0;
+       transform: rotate(-6.84deg);
+       .rt-marquee {
+            .rt-marquee-item {
+                .entry-title {
+                    font-size: 24px;
+                    font-weight: $font-semibold;
+                    margin-bottom: 0;
+                    svg {
+                        color: #BF1C00;
+                    }
+                }
+            }
+        }
+    }
+    &.style-6 {
+        padding: 20px 0;
+        top: 0;
+        left: 0;
+        .rt-marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            &:hover {
+                .rt-marquee-item {
+                    animation-play-state: paused;
+                }
+            }
+            .rt-marquee-item {
+                animation: marquee_right 30s linear infinite;
+                display: inline-block;
+                will-change: transform;
+                .entry-title {
+                    font-size: 24px;
+                    font-weight: $font-semibold;
+                    margin-bottom: 0;
+                    svg {
+                        color: #FF9B4B;
                     }
                 }
             }

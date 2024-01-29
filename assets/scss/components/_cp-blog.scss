@@ -151,6 +151,50 @@
             }
         }
     }
+    &.style-5 {
+        .item-img {
+            clip-path: none; 
+            border-radius: 0; 
+            a {
+                border-radius: 0; 
+                img {
+                    clip-path: none;
+                    border-radius: 0; 
+                }
+            }
+        }
+        .rt-tag {
+            top: 23px;
+            left: 28px;
+            .tag {
+                border: 0;
+                border-radius: 0;
+                color: $color-primary;
+            }
+        }
+        .item-content {
+            padding-top: 20px;
+            .entry-meta-list {
+                margin-bottom: 10px;
+            }
+            .quixa-button {
+                .quixa-btn {
+                    background-color: transparent;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 0;
+                    svg {
+                        color: $color-primary;
+                    }
+                    .btn-text1 {
+                        color: $color-black-dark;
+                    }
+                    .btn-text2 {
+                        color: $color-black-dark;
+                    }
+                }
+            }
+        }
+    }
 }
 .blog-imagelayout {
     .rt-tag {

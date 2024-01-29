@@ -74,8 +74,8 @@
 .rt-testimonial-wrap-5 {
     padding-top: 130px;
 }
-.rt-testimonial-wrap-6 {
-    
+.rt-testimonial-wrap-7 {
+    padding-bottom: 240px;
 }
 .rt-testimonial-layout-2 {
     border-radius: 50px;
@@ -228,6 +228,18 @@
             }
         }
     }
+    &.style-6 {
+        border: 1px solid #E5E5E5;
+        padding: 30px 40px 35px 45px;
+        margin-bottom: 10px;
+        animation: marquee_top 5s linear infinite;
+        .rt-author-area {
+            margin-bottom: 0;
+            .rt-shape {
+                position: inherit;
+            }
+        }
+    }
     .testimonial-box {
         border-radius: 15px;
         border: 1px solid #E5E5E5;
@@ -265,6 +277,11 @@
             }
         }
     }
+}
+
+.ticker-testimonial {
+    height: 668px;
+    padding: 20px 0;
 }
 
 .rt-thumbnail-slider-thumb-style-1 {

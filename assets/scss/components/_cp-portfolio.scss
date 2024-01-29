@@ -227,6 +227,10 @@
     }
 }
 
+.rt-portfolio-wrap-4 {
+    padding-top: 50px;
+}
+
 .rt-portfolio-box-2 {
     margin-bottom: 24px;
     &:hover {
@@ -309,7 +313,22 @@
                     }
                     svg {
                         color: $color-black-dark;
+                        &.style-2 {
+                            color: $color-white;
+                        }
                     }
+                }
+            }
+        }
+    }
+    &.style-2 {
+        .portfolio-img {
+            &:before {
+                border-radius: 0;
+            }
+            .img-grid-item {
+                img {
+                    border-radius: 0;
                 }
             }
         }

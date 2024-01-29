@@ -1,7 +1,10 @@
 .rt-about-wrap {
-    padding-top: 130px;
+    padding-top: 150px;
     position: relative;
-    z-index: 1;
+    z-index: -1;
+    @include media-only ("lg", min) {
+        margin-top: -20px;
+    }
     .rt-blur-shape {
         ul {
             li {
@@ -213,6 +216,8 @@
     top: -20px;
     left: 10px;
     z-index: 2;
+}
+.moving-text-shape {
     .icon-shape {
         height: 90px;
         width: 90px;

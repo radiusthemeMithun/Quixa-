@@ -1,4 +1,10 @@
 .text-box {
+    .subtitle {
+        color: $color-gray-font;
+        font-weight: $font-semibold;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+    }
     .title {
         color: $color-black;
         font-size: 48px;
@@ -28,6 +34,38 @@
         .shape {
             top: -20px;
             right: 0;
+            z-index: -1;
+        }
+    }
+    &.style-2 {
+        z-index: 1;
+        @include media-only ("lg", min) {
+            margin-right: -40px;
+        }
+        .subtitle {
+            margin-bottom: 20px;
+        }
+        .title {
+            color: $color-black-dark;
+            font-weight: $font-extra-bold;
+            z-index: 1;
+            &::before {
+                content: "";
+                width: 335px;
+                height: 15px;
+                background-color: $color-primary;
+                position: absolute;
+                top: 35px;
+                z-index: -1;
+                left: 90px;
+            }
+        }
+        p {
+            color: $color-paragraph;
+        }
+        .shape {
+            top: -25%;
+            left: 40px;
             z-index: -1;
         }
     }

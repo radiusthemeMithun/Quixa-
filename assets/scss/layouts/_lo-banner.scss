@@ -358,6 +358,34 @@
             }
         }
     }
+    &.style-6 {
+        .title {
+            font-size: 80px;
+            line-height: 100px;
+            color: $color-black-dark;
+            z-index: 1;
+            position: relative;
+            margin-bottom: 25px;
+            &::before {
+                content: "";
+                width: 325px;
+                height: 19px;
+                background-color: $color-primary;
+                position: absolute;
+                bottom: 12px;
+                z-index: -1;
+                right: 36%;
+            }
+            img {
+                vertical-align: baseline;
+            }
+        }
+        p {
+            @include media-only ("lg", min) {
+                padding-right: 285px;
+            }
+        }
+    }
 }
 
 .hero-wrap-2 {
@@ -788,6 +816,28 @@
         &:nth-child(3) {
             filter: drop-shadow(0px 4px 0px #828282);
             transform: rotate(-2.903deg);
+        }
+    }
+}
+
+.rt-banner-moving-shape {
+    right: 0;
+    top: 40px;
+    .moving-text-shape {
+        cursor: pointer;
+        .about-round-shape {
+            background-image: linear-gradient(180deg, #FFC5BB 0%, #FFF6F6 100%);
+            height: 193px;
+            width: 193px;
+        }
+        .icon-shape {
+            height: 100px;
+            width: 100px;
+            background-color: $color-white;
+            border-color: $color-white;
+            img {
+                transform: rotate(-41.55deg);
+            }
         }
     }
 }
