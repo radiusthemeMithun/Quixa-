@@ -1,10 +1,10 @@
 .rt-about-wrap {
     padding-top: 150px;
     position: relative;
-    z-index: -1;
-    @include media-only ("lg", min) {
-        margin-top: -20px;
-    }
+    // z-index: -1;
+    // @include media-only ("lg", min) {
+    //     margin-top: -20px;
+    // }
     .rt-blur-shape {
         ul {
             li {
@@ -242,7 +242,7 @@
         justify-content: center;
         transition: all .3s ease-in-out;
         img {
-            animation-duration: 10s;
+            animation-duration: 15s;
         }
     }
 }

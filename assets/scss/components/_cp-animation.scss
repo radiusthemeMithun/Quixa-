@@ -120,14 +120,14 @@
   }
 }
 /*------------------- Marquee Animation -------------------*/
-@keyframes marquee_left {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
-}
+// @keyframes marquee_left {
+//   0% {
+//       transform: translateX(0);
+//   }
+//   100% {
+//       transform: translateX(-100%);
+//   }
+// }
 
 @keyframes marquee_right {
   0% {

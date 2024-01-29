@@ -118,6 +118,9 @@
 
 
 
+
+
+
   /*===================================
    // Section background image 
   ====================================*/
@@ -248,7 +251,7 @@
     loop: true,
     spaceBetween: 30,
     speed: 800,
-    mousewheel: true,
+    // mousewheel: true,
     thumbs: {
         swiper: rtThumbnailTliderThumbStyle1,
     },
@@ -794,8 +797,34 @@ if (yPopup.length) {
   //   });
   // });
 
+  /*==============================
+  // Marquee
+  ===============================*/
+
+    var i = 1;
+    $('.marquee').each(function() {
+        var marqueeID = 'marquee-' + String(i)
+        // $(this).attr('id', customID)
+        var marqueeDirection = $(this).attr('id', marqueeID).attr("direction");
+        i++;
+        // console.log(marqueeDirection)
+        $(this).marquee({
+            direction: marqueeDirection,
+            duration: 50000,
+            gap: 0,
+            delayBeforeStart: 0,
+            duplicated: true,
+            startVisible: true,
+            pauseOnCycle:true,
+            pauseOnHover: true
+        });
+    });
+
+
   
 })(jQuery);
+
+
 
 
 
